@@ -8,23 +8,18 @@ configure(allprojects) { project ->
         }
     }
 }
-
 project.ext.preDexLibs = !project.hasProperty('disablePreDex')
-
 subprojects {
-
     group = 'org.smartregister'
-
-    ext.androidToolsBuildGradle     = '21.1.2'
-    ext.androidBuildToolsVersion    = '26.0.0'
-    ext.androidMinSdkVersion        = 19
-    ext.androidCompileSdkVersion    = 22
-    ext.androidTargetSdkVersion     = 22
-
+    ext.androidToolsBuildGradle     = '3.1.2'
+    ext.androidBuildToolsVersion    = '27.0.3'
+    ext.androidMinSdkVersion        = 16
+    ext.androidCompileSdkVersion    = 27
+    ext.androidTargetSdkVersion     = 27
     ext.androidAnnotationsVersion = '3.0.1';
     ext.androidAnnotationsAPIVersion = '3.0.1';
-
     repositories {
+        google()
         jcenter()
         mavenCentral()
         maven { url 'https://jitpack.io' }
@@ -42,7 +37,6 @@ subprojects {
         }
         mavenLocal()
     }
-
     // Improve build server performance by allowing disabling of pre-dexing
     // (see http://tools.android.com/tech-docs/new-build-system/tips#TOC-Improving-Build-Server-performance.)
     project.plugins.whenPluginAdded { plugin ->
@@ -53,13 +47,10 @@ subprojects {
         }
     }
 }
-
 apply plugin : 'java'
 apply plugin : 'build-dashboard'
-
 buildDashboard {
     reports.html.destination = "build/"
 }
-
 test.reports.html.enabled = false
 test.reports.junitXml.enabled = false

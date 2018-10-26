@@ -189,6 +189,1557 @@
           }
         }
       ]
+    },
+    {
+      "name": "ec_sample_form",
+      "columns": [
+        {
+          "column_name": "base_entity_id",
+          "type": "Client",
+          "json_mapping": {
+            "field": "baseEntityId"
+          }
+        },
+        {
+          "column_name": "member_type",
+          "type": "Client",
+          "json_mapping": {
+            "field": "memberType"
+          }
+        },
+        {
+          "column_name": "has_spouse",
+          "type": "Client",
+          "json_mapping": {
+            "field": "hasSpouse"
+          }
+        },
+        {
+          "column_name": "num_children",
+          "type": "Client",
+          "json_mapping": {
+            "field": "num_children"
+          }
+        }
+      ]
+    },
+    {
+      "name": "ec_assessment_endemic_tbr",
+      "columns": [
+        {
+          "column_name": "base_entity_id",
+          "type": "Client",
+          "json_mapping": {
+            "field": "baseEntityId"
+          }
+        },
+        {
+          "column_name": "version",
+          "type": "Client",
+          "json_mapping": {
+            "field": "version"}
+        },
+        {
+          "column_name": "uuid",
+          "type": "Client",
+          "json_mapping": {
+            "field": "uuid"}
+        },
+        {
+          "column_name": "inputs",
+          "type": "Client",
+          "json_mapping": {
+            "field": "inputs"}
+        },
+        {
+          "column_name": "patient_age_in_years",
+          "type": "Client",
+          "json_mapping": {
+            "field": "patient_age_in_years"}
+        },
+        {
+          "column_name": "patient_age_in_months",
+          "type": "Client",
+          "json_mapping": {
+            "field": "patient_age_in_months"}
+        },
+        {
+          "column_name": "patient_age_in_days",
+          "type": "Client",
+          "json_mapping": {
+            "field": "patient_age_in_days"}
+        },
+        {
+          "column_name": "patient_age_display",
+          "type": "Client",
+          "json_mapping": {
+            "field": "patient_age_display"}
+        },
+        {
+          "column_name": "patient_id",
+          "type": "Client",
+          "json_mapping": {
+            "field": "patient_id"}
+        },
+        {
+          "column_name": "patient_name",
+          "type": "Client",
+          "json_mapping": {
+            "field": "patient_name"}
+        },
+        {
+          "column_name": "measured_temperature",
+          "type": "Client",
+          "json_mapping": {
+            "field": "measured_temperature"}
+        },
+        {
+          "column_name": "symptom_cough",
+          "type": "Client",
+          "json_mapping": {
+            "field": "symptom_cough"}
+        },
+        {
+          "column_name": "symptom_indrawn_chest",
+          "type": "Client",
+          "json_mapping": {
+            "field": "symptom_indrawn_chest"}
+        },
+        {
+          "column_name": "symptom_fast_breathing",
+          "type": "Client",
+          "json_mapping": {
+            "field": "symptom_fast_breathing"}
+        },
+        {
+          "column_name": "symptom_diarrhea",
+          "type": "Client",
+          "json_mapping": {
+            "field": "symptom_diarrhea"}
+        },
+        {
+          "column_name": "symptom_fever",
+          "type": "Client",
+          "json_mapping": {
+            "field": "symptom_fever"}
+        },
+        {
+          "column_name": "symptom_malaria_test",
+          "type": "Client",
+          "json_mapping": {
+            "field": "symptom_malaria_test"}
+        },
+        {
+          "column_name": "symptom_danger_signs",
+          "type": "Client",
+          "json_mapping": {
+            "field": "symptom_danger_signs"}
+        },
+        {
+          "column_name": "symptom_danger_signs_codes",
+          "type": "Client",
+          "json_mapping": {
+            "field": "symptom_danger_signs_codes"}
+        },
+        {
+          "column_name": "treatment_follow_up",
+          "type": "Client",
+          "json_mapping": {
+            "field": "treatment_follow_up"}
+        },
+        {
+          "column_name": "referral_follow_up",
+          "type": "Client",
+          "json_mapping": {
+            "field": "referral_follow_up"}
+        },
+        {
+          "column_name": "treat_for_malaria",
+          "type": "Client",
+          "json_mapping": {
+            "field": "treat_for_malaria"}
+        },
+        {
+          "column_name": "infant_danger_signs_str_tmp",
+          "type": "Client",
+          "json_mapping": {
+            "field": "infant_danger_signs_str_tmp"}
+        },
+        {
+          "column_name": "infant_danger_signs_str",
+          "type": "Client",
+          "json_mapping": {
+            "field": "infant_danger_signs_str"}
+        },
+        {
+          "column_name": "infant_danger_signs_str_len",
+          "type": "Client",
+          "json_mapping": {
+            "field": "infant_danger_signs_str_len"}
+        },
+        {
+          "column_name": "danger_signs_str_tmp",
+          "type": "Client",
+          "json_mapping": {
+            "field": "danger_signs_str_tmp"}
+        },
+        {
+          "column_name": "danger_signs_str",
+          "type": "Client",
+          "json_mapping": {
+            "field": "danger_signs_str"}
+        },
+        {
+          "column_name": "danger_signs_str_len",
+          "type": "Client",
+          "json_mapping": {
+            "field": "danger_signs_str_len"}
+        },
+        {
+          "column_name": "syndrome_newborn_disease",
+          "type": "Client",
+          "json_mapping": {
+            "field": "syndrome_newborn_disease"}
+        },
+        {
+          "column_name": "syndrome_fever",
+          "type": "Client",
+          "json_mapping": {
+            "field": "syndrome_fever"}
+        },
+        {
+          "column_name": "syndrome_fever_rash",
+          "type": "Client",
+          "json_mapping": {
+            "field": "syndrome_fever_rash"}
+        },
+        {
+          "column_name": "syndrome_fever_bleeding",
+          "type": "Client",
+          "json_mapping": {
+            "field": "syndrome_fever_bleeding"}
+        },
+        {
+          "column_name": "syndrome_fever_painful_swelling",
+          "type": "Client",
+          "json_mapping": {
+            "field": "syndrome_fever_painful_swelling"}
+        },
+        {
+          "column_name": "syndrome_yellowness_of_eyes_skin",
+          "type": "Client",
+          "json_mapping": {
+            "field": "syndrome_yellowness_of_eyes_skin"}
+        },
+        {
+          "column_name": "syndrome_skin_worm",
+          "type": "Client",
+          "json_mapping": {
+            "field": "syndrome_skin_worm"}
+        },
+        {
+          "column_name": "syndrome_animal_bite",
+          "type": "Client",
+          "json_mapping": {
+            "field": "syndrome_animal_bite"}
+        },
+        {
+          "column_name": "syndrome_watery_diarrhoea",
+          "type": "Client",
+          "json_mapping": {
+            "field": "syndrome_watery_diarrhoea"}
+        },
+        {
+          "column_name": "syndrome_chest_illness",
+          "type": "Client",
+          "json_mapping": {
+            "field": "syndrome_chest_illness"}
+        },
+        {
+          "column_name": "syndrome_weakness",
+          "type": "Client",
+          "json_mapping": {
+            "field": "syndrome_weakness"}
+        },
+        {
+          "column_name": "syndrome_aefi",
+          "type": "Client",
+          "json_mapping": {
+            "field": "syndrome_aefi"}
+        },
+        {
+          "column_name": "is_referral",
+          "type": "Client",
+          "json_mapping": {
+            "field": "is_referral"}
+        },
+        {
+          "column_name": "needs_muac_follow_up",
+          "type": "Client",
+          "json_mapping": {
+            "field": "needs_muac_follow_up"}
+        },
+        {
+          "column_name": "needs_anaemia_follow_up",
+          "type": "Client",
+          "json_mapping": {
+            "field": "needs_anaemia_follow_up"}
+        },
+        {
+          "column_name": "needs_immunization_follow_up",
+          "type": "Client",
+          "json_mapping": {
+            "field": "needs_immunization_follow_up"}
+        },
+        {
+          "column_name": "suspected_syndromes_tmp",
+          "type": "Client",
+          "json_mapping": {
+            "field": "suspected_syndromes_tmp"}
+        },
+        {
+          "column_name": "suspected_syndromes_len",
+          "type": "Client",
+          "json_mapping": {
+            "field": "suspected_syndromes_len"}
+        },
+        {
+          "column_name": "suspected_syndromes",
+          "type": "Client",
+          "json_mapping": {
+            "field": "suspected_syndromes"}
+        },
+        {
+          "column_name": "p_note",
+          "type": "Client",
+          "json_mapping": {
+            "field": "p_note"}
+        },
+        {
+          "column_name": "patient_coughs",
+          "type": "Client",
+          "json_mapping": {
+            "field": "patient_coughs"}
+        },
+        {
+          "column_name": "coughing_duration",
+          "type": "Client",
+          "json_mapping": {
+            "field": "coughing_duration"}
+        },
+        {
+          "column_name": "chest_indrawing",
+          "type": "Client",
+          "json_mapping": {
+            "field": "chest_indrawing"}
+        },
+        {
+          "column_name": "difficulty_in_breathing",
+          "type": "Client",
+          "json_mapping": {
+            "field": "difficulty_in_breathing"}
+        },
+        {
+          "column_name": "breath_timer",
+          "type": "Client",
+          "json_mapping": {
+            "field": "breath_timer"}
+        },
+        {
+          "column_name": "breath_note",
+          "type": "Client",
+          "json_mapping": {
+            "field": "breath_note"}
+        },
+        {
+          "column_name": "breath_count",
+          "type": "Client",
+          "json_mapping": {
+            "field": "breath_count"}
+        },
+        {
+          "column_name": "fast_breathing",
+          "type": "Client",
+          "json_mapping": {
+            "field": "fast_breathing"}
+        },
+        {
+          "column_name": "fast_breathing_note_true",
+          "type": "Client",
+          "json_mapping": {
+            "field": "fast_breathing_note_true"}
+        },
+        {
+          "column_name": "fast_breathing_note_false",
+          "type": "Client",
+          "json_mapping": {
+            "field": "fast_breathing_note_false"}
+        },
+        {
+          "column_name": "patient_fever",
+          "type": "Client",
+          "json_mapping": {
+            "field": "patient_fever"}
+        },
+        {
+          "column_name": "fever_note",
+          "type": "Client",
+          "json_mapping": {
+            "field": "fever_note"}
+        },
+        {
+          "column_name": "patient_temperature",
+          "type": "Client",
+          "json_mapping": {
+            "field": "patient_temperature"}
+        },
+        {
+          "column_name": "fever_duration",
+          "type": "Client",
+          "json_mapping": {
+            "field": "fever_duration"}
+        },
+        {
+          "column_name": "treated_past_two_weeks",
+          "type": "Client",
+          "json_mapping": {
+            "field": "treated_past_two_weeks"}
+        },
+        {
+          "column_name": "mrdt_result",
+          "type": "Client",
+          "json_mapping": {
+            "field": "mrdt_result"}
+        },
+        {
+          "column_name": "mrdt_note",
+          "type": "Client",
+          "json_mapping": {
+            "field": "mrdt_note"}
+        },
+        {
+          "column_name": "mrdt_hint",
+          "type": "Client",
+          "json_mapping": {
+            "field": "mrdt_hint"}
+        },
+        {
+          "column_name": "positive_image",
+          "type": "Client",
+          "json_mapping": {
+            "field": "positive_image"}
+        },
+        {
+          "column_name": "negative_note",
+          "type": "Client",
+          "json_mapping": {
+            "field": "negative_note"}
+        },
+        {
+          "column_name": "mrdt_source",
+          "type": "Client",
+          "json_mapping": {
+            "field": "mrdt_source"}
+        },
+        {
+          "column_name": "mrdt_used_from",
+          "type": "Client",
+          "json_mapping": {
+            "field": "mrdt_used_from"}
+        },
+        {
+          "column_name": "skin_rash",
+          "type": "Client",
+          "json_mapping": {
+            "field": "skin_rash"}
+        },
+        {
+          "column_name": "bleeding",
+          "type": "Client",
+          "json_mapping": {
+            "field": "bleeding"}
+        },
+        {
+          "column_name": "painful_swelling",
+          "type": "Client",
+          "json_mapping": {
+            "field": "painful_swelling"}
+        },
+        {
+          "column_name": "patient_diarrhea",
+          "type": "Client",
+          "json_mapping": {
+            "field": "patient_diarrhea"}
+        },
+        {
+          "column_name": "diarrhea_duration",
+          "type": "Client",
+          "json_mapping": {
+            "field": "diarrhea_duration"}
+        },
+        {
+          "column_name": "diarrhea_episodes",
+          "type": "Client",
+          "json_mapping": {
+            "field": "diarrhea_episodes"}
+        },
+        {
+          "column_name": "diarrhea_blood",
+          "type": "Client",
+          "json_mapping": {
+            "field": "diarrhea_blood"}
+        },
+        {
+          "column_name": "infant_danger_signs",
+          "type": "Client",
+          "json_mapping": {
+            "field": "infant_danger_signs"}
+        },
+        {
+          "column_name": "danger_signs",
+          "type": "Client",
+          "json_mapping": {
+            "field": "danger_signs"}
+        },
+        {
+          "column_name": "n_question",
+          "type": "Client",
+          "json_mapping": {
+            "field": "n_question"}
+        },
+        {
+          "column_name": "worm_emerging",
+          "type": "Client",
+          "json_mapping": {
+            "field": "worm_emerging"}
+        },
+        {
+          "column_name": "weakness",
+          "type": "Client",
+          "json_mapping": {
+            "field": "weakness"}
+        },
+        {
+          "column_name": "injury_related",
+          "type": "Client",
+          "json_mapping": {
+            "field": "injury_related"}
+        },
+        {
+          "column_name": "animal_bite",
+          "type": "Client",
+          "json_mapping": {
+            "field": "animal_bite"}
+        },
+        {
+          "column_name": "reaction_to_vaccine",
+          "type": "Client",
+          "json_mapping": {
+            "field": "reaction_to_vaccine"}
+        },
+        {
+          "column_name": "skin_yellowness",
+          "type": "Client",
+          "json_mapping": {
+            "field": "skin_yellowness"}
+        },
+        {
+          "column_name": "yellowness_duration",
+          "type": "Client",
+          "json_mapping": {
+            "field": "yellowness_duration"}
+        },
+        {
+          "column_name": "n_nutrition_assessment",
+          "type": "Client",
+          "json_mapping": {
+            "field": "n_nutrition_assessment"}
+        },
+        {
+          "column_name": "muac_score",
+          "type": "Client",
+          "json_mapping": {
+            "field": "muac_score"}
+        },
+        {
+          "column_name": "n_check_marasmus",
+          "type": "Client",
+          "json_mapping": {
+            "field": "n_check_marasmus"}
+        },
+        {
+          "column_name": "n_muac_3_feedback",
+          "type": "Client",
+          "json_mapping": {
+            "field": "n_muac_3_feedback"}
+        },
+        {
+          "column_name": "n_muac_2_feedback",
+          "type": "Client",
+          "json_mapping": {
+            "field": "n_muac_2_feedback"}
+        },
+        {
+          "column_name": "n_muac_1_feedback",
+          "type": "Client",
+          "json_mapping": {
+            "field": "n_muac_1_feedback"}
+        },
+        {
+          "column_name": "n_edema",
+          "type": "Client",
+          "json_mapping": {
+            "field": "n_edema"}
+        },
+        {
+          "column_name": "has_edema_indentation",
+          "type": "Client",
+          "json_mapping": {
+            "field": "has_edema_indentation"}
+        },
+        {
+          "column_name": "n_anaemia_assessment",
+          "type": "Client",
+          "json_mapping": {
+            "field": "n_anaemia_assessment"}
+        },
+        {
+          "column_name": "has_paleness",
+          "type": "Client",
+          "json_mapping": {
+            "field": "has_paleness"}
+        },
+        {
+          "column_name": "blood_refills_quickly",
+          "type": "Client",
+          "json_mapping": {
+            "field": "blood_refills_quickly"}
+        },
+        {
+          "column_name": "n_patient_has_anaemia",
+          "type": "Client",
+          "json_mapping": {
+            "field": "n_patient_has_anaemia"}
+        },
+        {
+          "column_name": "n_buy_healthy_start",
+          "type": "Client",
+          "json_mapping": {
+            "field": "n_buy_healthy_start"}
+        },
+        {
+          "column_name": "mother_breastfeeding",
+          "type": "Client",
+          "json_mapping": {
+            "field": "mother_breastfeeding"}
+        },
+        {
+          "column_name": "n_breastfeeding_feedback_yes",
+          "type": "Client",
+          "json_mapping": {
+            "field": "n_breastfeeding_feedback_yes"}
+        },
+        {
+          "column_name": "n_breastfeeding_feedback_no",
+          "type": "Client",
+          "json_mapping": {
+            "field": "n_breastfeeding_feedback_no"}
+        },
+        {
+          "column_name": "mother_breastfed_last_24hrs",
+          "type": "Client",
+          "json_mapping": {
+            "field": "mother_breastfed_last_24hrs"}
+        },
+        {
+          "column_name": "n_breastfeeding_feedback_last_24hrs_6mo",
+          "type": "Client",
+          "json_mapping": {
+            "field": "n_breastfeeding_feedback_last_24hrs_6mo"}
+        },
+        {
+          "column_name": "n_breastfeeding_feedback_last_24hrs_12mo",
+          "type": "Client",
+          "json_mapping": {
+            "field": "n_breastfeeding_feedback_last_24hrs_12mo"}
+        },
+        {
+          "column_name": "n_breastfeeding_feedback_last_24hrs_24mo",
+          "type": "Client",
+          "json_mapping": {
+            "field": "n_breastfeeding_feedback_last_24hrs_24mo"}
+        },
+        {
+          "column_name": "fed_solid_foods_count",
+          "type": "Client",
+          "json_mapping": {
+            "field": "fed_solid_foods_count"}
+        },
+        {
+          "column_name": "n_breastfeeding_feedback_all",
+          "type": "Client",
+          "json_mapping": {
+            "field": "n_breastfeeding_feedback_all"}
+        },
+        {
+          "column_name": "child_breastfed_last_24hrs",
+          "type": "Client",
+          "json_mapping": {
+            "field": "child_breastfed_last_24hrs"}
+        },
+        {
+          "column_name": "n_breastfeeding_feedback_last_24hrs_60mo",
+          "type": "Client",
+          "json_mapping": {
+            "field": "n_breastfeeding_feedback_last_24hrs_60mo"}
+        },
+        {
+          "column_name": "solid_foods_eaten",
+          "type": "Client",
+          "json_mapping": {
+            "field": "solid_foods_eaten"}
+        },
+        {
+          "column_name": "n_solid_foods_feedback",
+          "type": "Client",
+          "json_mapping": {
+            "field": "n_solid_foods_feedback"}
+        },
+        {
+          "column_name": "n_confirm_immunization",
+          "type": "Client",
+          "json_mapping": {
+            "field": "n_confirm_immunization"}
+        },
+        {
+          "column_name": "child_vaccinated",
+          "type": "Client",
+          "json_mapping": {
+            "field": "child_vaccinated"}
+        },
+        {
+          "column_name": "n_importance_of_immunization_feedback",
+          "type": "Client",
+          "json_mapping": {
+            "field": "n_importance_of_immunization_feedback"}
+        },
+        {
+          "column_name": "child_immunization_up_to_date",
+          "type": "Client",
+          "json_mapping": {
+            "field": "child_immunization_up_to_date"}
+        },
+        {
+          "column_name": "immunizations_2mo",
+          "type": "Client",
+          "json_mapping": {
+            "field": "immunizations_2mo"}
+        },
+        {
+          "column_name": "immunizations_9mo",
+          "type": "Client",
+          "json_mapping": {
+            "field": "immunizations_9mo"}
+        },
+        {
+          "column_name": "immunizations_18mo",
+          "type": "Client",
+          "json_mapping": {
+            "field": "immunizations_18mo"}
+        },
+        {
+          "column_name": "vit_a_doses",
+          "type": "Client",
+          "json_mapping": {
+            "field": "vit_a_doses"}
+        },
+        {
+          "column_name": "n_vit_a_doses",
+          "type": "Client",
+          "json_mapping": {
+            "field": "n_vit_a_doses"}
+        },
+        {
+          "column_name": "deworming_doses",
+          "type": "Client",
+          "json_mapping": {
+            "field": "deworming_doses"}
+        },
+        {
+          "column_name": "n_deworming_doses",
+          "type": "Client",
+          "json_mapping": {
+            "field": "n_deworming_doses"}
+        },
+        {
+          "column_name": "diagnosis_cough",
+          "type": "Client",
+          "json_mapping": {
+            "field": "diagnosis_cough"}
+        },
+        {
+          "column_name": "diagnosis_diarrhea",
+          "type": "Client",
+          "json_mapping": {
+            "field": "diagnosis_diarrhea"}
+        },
+        {
+          "column_name": "diagnosis_fever",
+          "type": "Client",
+          "json_mapping": {
+            "field": "diagnosis_fever"}
+        },
+        {
+          "column_name": "submit",
+          "type": "Client",
+          "json_mapping": {
+            "field": "submit"}
+        },
+        {
+          "column_name": "r_summary",
+          "type": "Client",
+          "json_mapping": {
+            "field": "r_summary"}
+        },
+        {
+          "column_name": "r_patient_info",
+          "type": "Client",
+          "json_mapping": {
+            "field": "r_patient_info"}
+        },
+        {
+          "column_name": "r_symptoms",
+          "type": "Client",
+          "json_mapping": {
+            "field": "r_symptoms"}
+        },
+        {
+          "column_name": "r_symptom_cough",
+          "type": "Client",
+          "json_mapping": {
+            "field": "r_symptom_cough"}
+        },
+        {
+          "column_name": "r_symptom_indrawn_chest",
+          "type": "Client",
+          "json_mapping": {
+            "field": "r_symptom_indrawn_chest"}
+        },
+        {
+          "column_name": "r_symptom_fast_breathing",
+          "type": "Client",
+          "json_mapping": {
+            "field": "r_symptom_fast_breathing"}
+        },
+        {
+          "column_name": "r_symptom",
+          "type": "Client",
+          "json_mapping": {
+            "field": "r_symptom"}
+        },
+        {
+          "column_name": "r_symptom_diarrhea",
+          "type": "Client",
+          "json_mapping": {
+            "field": "r_symptom_diarrhea"}
+        },
+        {
+          "column_name": "r_bloody_diarroea",
+          "type": "Client",
+          "json_mapping": {
+            "field": "r_bloody_diarroea"}
+        },
+        {
+          "column_name": "r_symptom_fever",
+          "type": "Client",
+          "json_mapping": {
+            "field": "r_symptom_fever"}
+        },
+        {
+          "column_name": "r_rash",
+          "type": "Client",
+          "json_mapping": {
+            "field": "r_rash"}
+        },
+        {
+          "column_name": "r_bleeding",
+          "type": "Client",
+          "json_mapping": {
+            "field": "r_bleeding"}
+        },
+        {
+          "column_name": "r_painful_swelling",
+          "type": "Client",
+          "json_mapping": {
+            "field": "r_painful_swelling"}
+        },
+        {
+          "column_name": "r_symptom_malaria_test",
+          "type": "Client",
+          "json_mapping": {
+            "field": "r_symptom_malaria_test"}
+        },
+        {
+          "column_name": "r_symptom_danger_signs",
+          "type": "Client",
+          "json_mapping": {
+            "field": "r_symptom_danger_signs"}
+        },
+        {
+          "column_name": "r_symptom_infant_danger_signs",
+          "type": "Client",
+          "json_mapping": {
+            "field": "r_symptom_infant_danger_signs"}
+        },
+        {
+          "column_name": "r_worm",
+          "type": "Client",
+          "json_mapping": {
+            "field": "r_worm"}
+        },
+        {
+          "column_name": "r_weakness",
+          "type": "Client",
+          "json_mapping": {
+            "field": "r_weakness"}
+        },
+        {
+          "column_name": "r_injury_related",
+          "type": "Client",
+          "json_mapping": {
+            "field": "r_injury_related"}
+        },
+        {
+          "column_name": "r_animal_bite",
+          "type": "Client",
+          "json_mapping": {
+            "field": "r_animal_bite"}
+        },
+        {
+          "column_name": "r_vaccine_reaction",
+          "type": "Client",
+          "json_mapping": {
+            "field": "r_vaccine_reaction"}
+        },
+        {
+          "column_name": "r_yellowness",
+          "type": "Client",
+          "json_mapping": {
+            "field": "r_yellowness"}
+        },
+        {
+          "column_name": "r_symptom_none",
+          "type": "Client",
+          "json_mapping": {
+            "field": "r_symptom_none"}
+        },
+        {
+          "column_name": "r_referral",
+          "type": "Client",
+          "json_mapping": {
+            "field": "r_referral"}
+        },
+        {
+          "column_name": "r_referral_age_under_2",
+          "type": "Client",
+          "json_mapping": {
+            "field": "r_referral_age_under_2"}
+        },
+        {
+          "column_name": "r_referral_cough",
+          "type": "Client",
+          "json_mapping": {
+            "field": "r_referral_cough"}
+        },
+        {
+          "column_name": "r_referral_pneumonia",
+          "type": "Client",
+          "json_mapping": {
+            "field": "r_referral_pneumonia"}
+        },
+        {
+          "column_name": "r_referral_diarrhea",
+          "type": "Client",
+          "json_mapping": {
+            "field": "r_referral_diarrhea"}
+        },
+        {
+          "column_name": "r_referral_fever",
+          "type": "Client",
+          "json_mapping": {
+            "field": "r_referral_fever"}
+        },
+        {
+          "column_name": "r_referral_malaria",
+          "type": "Client",
+          "json_mapping": {
+            "field": "r_referral_malaria"}
+        },
+        {
+          "column_name": "r_referral_danger_signs",
+          "type": "Client",
+          "json_mapping": {
+            "field": "r_referral_danger_signs"}
+        },
+        {
+          "column_name": "r_syndrome_newborn_disease",
+          "type": "Client",
+          "json_mapping": {
+            "field": "r_syndrome_newborn_disease"}
+        },
+        {
+          "column_name": "r_syndrome_fever_rash",
+          "type": "Client",
+          "json_mapping": {
+            "field": "r_syndrome_fever_rash"}
+        },
+        {
+          "column_name": "r_syndrome_fever",
+          "type": "Client",
+          "json_mapping": {
+            "field": "r_syndrome_fever"}
+        },
+        {
+          "column_name": "r_syndrome_yellowness_of_eyes_skin",
+          "type": "Client",
+          "json_mapping": {
+            "field": "r_syndrome_yellowness_of_eyes_skin"}
+        },
+        {
+          "column_name": "r_syndrome_skin_worm",
+          "type": "Client",
+          "json_mapping": {
+            "field": "r_syndrome_skin_worm"}
+        },
+        {
+          "column_name": "r_syndrome_animal_bite",
+          "type": "Client",
+          "json_mapping": {
+            "field": "r_syndrome_animal_bite"}
+        },
+        {
+          "column_name": "r_syndrome_watery_diarrhoea",
+          "type": "Client",
+          "json_mapping": {
+            "field": "r_syndrome_watery_diarrhoea"}
+        },
+        {
+          "column_name": "r_syndrome_chest_illness",
+          "type": "Client",
+          "json_mapping": {
+            "field": "r_syndrome_chest_illness"}
+        },
+        {
+          "column_name": "r_syndrome_weakness",
+          "type": "Client",
+          "json_mapping": {
+            "field": "r_syndrome_weakness"}
+        },
+        {
+          "column_name": "r_syndrome_aefi",
+          "type": "Client",
+          "json_mapping": {
+            "field": "r_syndrome_aefi"}
+        },
+        {
+          "column_name": "r_url",
+          "type": "Client",
+          "json_mapping": {
+            "field": "r_url"}
+        },
+        {
+          "column_name": "r_referral_mam",
+          "type": "Client",
+          "json_mapping": {
+            "field": "r_referral_mam"}
+        },
+        {
+          "column_name": "r_referral_sam",
+          "type": "Client",
+          "json_mapping": {
+            "field": "r_referral_sam"}
+        },
+        {
+          "column_name": "r_diagnosis",
+          "type": "Client",
+          "json_mapping": {
+            "field": "r_diagnosis"}
+        },
+        {
+          "column_name": "r_diagnosis_cough",
+          "type": "Client",
+          "json_mapping": {
+            "field": "r_diagnosis_cough"}
+        },
+        {
+          "column_name": "r_diagnosis_pneumonia",
+          "type": "Client",
+          "json_mapping": {
+            "field": "r_diagnosis_pneumonia"}
+        },
+        {
+          "column_name": "r_cough_cough_syrup",
+          "type": "Client",
+          "json_mapping": {
+            "field": "r_cough_cough_syrup"}
+        },
+        {
+          "column_name": "r_cough_cough_syrup_1",
+          "type": "Client",
+          "json_mapping": {
+            "field": "r_cough_cough_syrup_1"}
+        },
+        {
+          "column_name": "r_cough_cough_syrup_2",
+          "type": "Client",
+          "json_mapping": {
+            "field": "r_cough_cough_syrup_2"}
+        },
+        {
+          "column_name": "r_cough_cough_syrup_3",
+          "type": "Client",
+          "json_mapping": {
+            "field": "r_cough_cough_syrup_3"}
+        },
+        {
+          "column_name": "gave_cough_syrup",
+          "type": "Client",
+          "json_mapping": {
+            "field": "gave_cough_syrup"}
+        },
+        {
+          "column_name": "r_cough_amox",
+          "type": "Client",
+          "json_mapping": {
+            "field": "r_cough_amox"}
+        },
+        {
+          "column_name": "amox_type",
+          "type": "Client",
+          "json_mapping": {
+            "field": "amox_type"}
+        },
+        {
+          "column_name": "cough_amox_dosage",
+          "type": "Client",
+          "json_mapping": {
+            "field": "cough_amox_dosage"}
+        },
+        {
+          "column_name": "r_cough_amox_1",
+          "type": "Client",
+          "json_mapping": {
+            "field": "r_cough_amox_1"}
+        },
+        {
+          "column_name": "r_cough_amox_3",
+          "type": "Client",
+          "json_mapping": {
+            "field": "r_cough_amox_3"}
+        },
+        {
+          "column_name": "r_cough_amox_4",
+          "type": "Client",
+          "json_mapping": {
+            "field": "r_cough_amox_4"}
+        },
+        {
+          "column_name": "r_cough_amox_dispersible_instructions",
+          "type": "Client",
+          "json_mapping": {
+            "field": "r_cough_amox_dispersible_instructions"}
+        },
+        {
+          "column_name": "gave_amox",
+          "type": "Client",
+          "json_mapping": {
+            "field": "gave_amox"}
+        },
+        {
+          "column_name": "r_cough_instruction",
+          "type": "Client",
+          "json_mapping": {
+            "field": "r_cough_instruction"}
+        },
+        {
+          "column_name": "r_cough_instruction1",
+          "type": "Client",
+          "json_mapping": {
+            "field": "r_cough_instruction1"}
+        },
+        {
+          "column_name": "r_cough_instruction2",
+          "type": "Client",
+          "json_mapping": {
+            "field": "r_cough_instruction2"}
+        },
+        {
+          "column_name": "r_cough_instruction3",
+          "type": "Client",
+          "json_mapping": {
+            "field": "r_cough_instruction3"}
+        },
+        {
+          "column_name": "r_cough_instruction4",
+          "type": "Client",
+          "json_mapping": {
+            "field": "r_cough_instruction4"}
+        },
+        {
+          "column_name": "r_cough_instruction6",
+          "type": "Client",
+          "json_mapping": {
+            "field": "r_cough_instruction6"}
+        },
+        {
+          "column_name": "r_diagnosis_diarrhea",
+          "type": "Client",
+          "json_mapping": {
+            "field": "r_diagnosis_diarrhea"}
+        },
+        {
+          "column_name": "r_diarrhea_breastfeeding",
+          "type": "Client",
+          "json_mapping": {
+            "field": "r_diarrhea_breastfeeding"}
+        },
+        {
+          "column_name": "r_diarrhea_breastfeeding1",
+          "type": "Client",
+          "json_mapping": {
+            "field": "r_diarrhea_breastfeeding1"}
+        },
+        {
+          "column_name": "r_diarrhea_ors_infants",
+          "type": "Client",
+          "json_mapping": {
+            "field": "r_diarrhea_ors_infants"}
+        },
+        {
+          "column_name": "r_diarrhea_ors",
+          "type": "Client",
+          "json_mapping": {
+            "field": "r_diarrhea_ors"}
+        },
+        {
+          "column_name": "r_diarrhea_ors1",
+          "type": "Client",
+          "json_mapping": {
+            "field": "r_diarrhea_ors1"}
+        },
+        {
+          "column_name": "r_diarrhea_ors2",
+          "type": "Client",
+          "json_mapping": {
+            "field": "r_diarrhea_ors2"}
+        },
+        {
+          "column_name": "r_diarrhea_ors3",
+          "type": "Client",
+          "json_mapping": {
+            "field": "r_diarrhea_ors3"}
+        },
+        {
+          "column_name": "gave_ors",
+          "type": "Client",
+          "json_mapping": {
+            "field": "gave_ors"}
+        },
+        {
+          "column_name": "r_diarrhea_zinc",
+          "type": "Client",
+          "json_mapping": {
+            "field": "r_diarrhea_zinc"}
+        },
+        {
+          "column_name": "r_diarrhea_zinc_1",
+          "type": "Client",
+          "json_mapping": {
+            "field": "r_diarrhea_zinc_1"}
+        },
+        {
+          "column_name": "r_diarrhea_zinc_2",
+          "type": "Client",
+          "json_mapping": {
+            "field": "r_diarrhea_zinc_2"}
+        },
+        {
+          "column_name": "r_diarrhea_zinc_3",
+          "type": "Client",
+          "json_mapping": {
+            "field": "r_diarrhea_zinc_3"}
+        },
+        {
+          "column_name": "gave_zinc",
+          "type": "Client",
+          "json_mapping": {
+            "field": "gave_zinc"}
+        },
+        {
+          "column_name": "r_diarrhea_instruction",
+          "type": "Client",
+          "json_mapping": {
+            "field": "r_diarrhea_instruction"}
+        },
+        {
+          "column_name": "r_diarrhea_instructions1",
+          "type": "Client",
+          "json_mapping": {
+            "field": "r_diarrhea_instructions1"}
+        },
+        {
+          "column_name": "r_diarrhea_instructions2",
+          "type": "Client",
+          "json_mapping": {
+            "field": "r_diarrhea_instructions2"}
+        },
+        {
+          "column_name": "r_diarrhea_instructions3",
+          "type": "Client",
+          "json_mapping": {
+            "field": "r_diarrhea_instructions3"}
+        },
+        {
+          "column_name": "r_diarrhea_instructions4",
+          "type": "Client",
+          "json_mapping": {
+            "field": "r_diarrhea_instructions4"}
+        },
+        {
+          "column_name": "r_diarrhea_instructions5",
+          "type": "Client",
+          "json_mapping": {
+            "field": "r_diarrhea_instructions5"}
+        },
+        {
+          "column_name": "r_diarrhea_instructions6",
+          "type": "Client",
+          "json_mapping": {
+            "field": "r_diarrhea_instructions6"}
+        },
+        {
+          "column_name": "r_diagnosis_fever",
+          "type": "Client",
+          "json_mapping": {
+            "field": "r_diagnosis_fever"}
+        },
+        {
+          "column_name": "r_diagnosis_malaria",
+          "type": "Client",
+          "json_mapping": {
+            "field": "r_diagnosis_malaria"}
+        },
+        {
+          "column_name": "r_fever_al",
+          "type": "Client",
+          "json_mapping": {
+            "field": "r_fever_al"}
+        },
+        {
+          "column_name": "r_fever_al_1",
+          "type": "Client",
+          "json_mapping": {
+            "field": "r_fever_al_1"}
+        },
+        {
+          "column_name": "r_fever_al_2",
+          "type": "Client",
+          "json_mapping": {
+            "field": "r_fever_al_2"}
+        },
+        {
+          "column_name": "r_fever_al_3",
+          "type": "Client",
+          "json_mapping": {
+            "field": "r_fever_al_3"}
+        },
+        {
+          "column_name": "r_fever_al_4",
+          "type": "Client",
+          "json_mapping": {
+            "field": "r_fever_al_4"}
+        },
+        {
+          "column_name": "gave_al",
+          "type": "Client",
+          "json_mapping": {
+            "field": "gave_al"}
+        },
+        {
+          "column_name": "al_pack",
+          "type": "Client",
+          "json_mapping": {
+            "field": "al_pack"}
+        },
+        {
+          "column_name": "al_source",
+          "type": "Client",
+          "json_mapping": {
+            "field": "al_source"}
+        },
+        {
+          "column_name": "r_fever_paracetamol",
+          "type": "Client",
+          "json_mapping": {
+            "field": "r_fever_paracetamol"}
+        },
+        {
+          "column_name": "r_fever_paracetamol_1",
+          "type": "Client",
+          "json_mapping": {
+            "field": "r_fever_paracetamol_1"}
+        },
+        {
+          "column_name": "r_fever_paracetamol_2",
+          "type": "Client",
+          "json_mapping": {
+            "field": "r_fever_paracetamol_2"}
+        },
+        {
+          "column_name": "r_fever_paracetamol_3",
+          "type": "Client",
+          "json_mapping": {
+            "field": "r_fever_paracetamol_3"}
+        },
+        {
+          "column_name": "r_fever_paracetamol_4",
+          "type": "Client",
+          "json_mapping": {
+            "field": "r_fever_paracetamol_4"}
+        },
+        {
+          "column_name": "gave_paracetamol",
+          "type": "Client",
+          "json_mapping": {
+            "field": "gave_paracetamol"}
+        },
+        {
+          "column_name": "r_fever_instruction",
+          "type": "Client",
+          "json_mapping": {
+            "field": "r_fever_instruction"}
+        },
+        {
+          "column_name": "r_fever_instructions1",
+          "type": "Client",
+          "json_mapping": {
+            "field": "r_fever_instructions1"}
+        },
+        {
+          "column_name": "r_fever_instructions2",
+          "type": "Client",
+          "json_mapping": {
+            "field": "r_fever_instructions2"}
+        },
+        {
+          "column_name": "r_fever_instructions3",
+          "type": "Client",
+          "json_mapping": {
+            "field": "r_fever_instructions3"}
+        },
+        {
+          "column_name": "r_fever_instructions4",
+          "type": "Client",
+          "json_mapping": {
+            "field": "r_fever_instructions4"}
+        },
+        {
+          "column_name": "r_feeding",
+          "type": "Client",
+          "json_mapping": {
+            "field": "r_feeding"}
+        },
+        {
+          "column_name": "r_feeding_note1",
+          "type": "Client",
+          "json_mapping": {
+            "field": "r_feeding_note1"}
+        },
+        {
+          "column_name": "r_feeding_note2",
+          "type": "Client",
+          "json_mapping": {
+            "field": "r_feeding_note2"}
+        },
+        {
+          "column_name": "r_feeding_note3",
+          "type": "Client",
+          "json_mapping": {
+            "field": "r_feeding_note3"}
+        },
+        {
+          "column_name": "r_feeding_note4",
+          "type": "Client",
+          "json_mapping": {
+            "field": "r_feeding_note4"}
+        },
+        {
+          "column_name": "r_healthy_tips",
+          "type": "Client",
+          "json_mapping": {
+            "field": "r_healthy_tips"}
+        },
+        {
+          "column_name": "r_healthy_tips_h1",
+          "type": "Client",
+          "json_mapping": {
+            "field": "r_healthy_tips_h1"}
+        },
+        {
+          "column_name": "r_healthy_tips1",
+          "type": "Client",
+          "json_mapping": {
+            "field": "r_healthy_tips1"}
+        },
+        {
+          "column_name": "r_healthy_tips2",
+          "type": "Client",
+          "json_mapping": {
+            "field": "r_healthy_tips2"}
+        },
+        {
+          "column_name": "r_healthy_tips_h2",
+          "type": "Client",
+          "json_mapping": {
+            "field": "r_healthy_tips_h2"}
+        },
+        {
+          "column_name": "r_healthy_tips3",
+          "type": "Client",
+          "json_mapping": {
+            "field": "r_healthy_tips3"}
+        },
+        {
+          "column_name": "r_healthy_tips4",
+          "type": "Client",
+          "json_mapping": {
+            "field": "r_healthy_tips4"}
+        },
+        {
+          "column_name": "r_followup_instructions",
+          "type": "Client",
+          "json_mapping": {
+            "field": "r_followup_instructions"}
+        },
+        {
+          "column_name": "r_followup",
+          "type": "Client",
+          "json_mapping": {
+            "field": "r_followup"}
+        },
+        {
+          "column_name": "r_followup_note",
+          "type": "Client",
+          "json_mapping": {
+            "field": "r_followup_note"}
+        },
+        {
+          "column_name": "instanceID",
+          "type": "Client",
+          "json_mapping": {
+            "field": "instanceID"}
+        }
+      ]
     }
   ]
 }

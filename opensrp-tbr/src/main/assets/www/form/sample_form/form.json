@@ -1,0 +1,78 @@
+{
+  "name": "SampleForm",
+  "title": "Sample Form",
+  "sms_keyword": "sample_Form",
+  "default_language": "English",
+  "instance": {
+    "encounter_type": "Sample Form"
+  },
+  "version": "201801230940",
+  "id_string": "sample_form",
+  "type": "survey",
+  "children": [
+
+    {
+      "instance": {
+        "openmrs_entity_id": "location_id",
+        "openmrs_entity": "encounter"
+      },
+      "type": "select one",
+      "name": "member_type",
+      "children": [
+        {
+          "instance": {
+            "openmrs_code": " Employed"
+          },
+          "name": "employed",
+          "label": {
+            "English": "Employed"
+          }
+        },
+        {
+          "instance": {
+            "openmrs_code": " Self Employed"
+          },
+          "name": "self_employed",
+          "label": {
+            "English": "Self Employed"
+          }
+        }
+        ]
+    },
+    {
+      "instance": {
+        "openmrs_entity_id": "spouse",
+        "openmrs_entity": "encounter"
+      },
+      "type": "select one",
+      "name": "has_spouse",
+      "children": [
+        {
+          "instance": {
+            "openmrs_code": "Spouse"
+          },
+          "name": "spouse_yes",
+          "label": {
+            "English": "Has Spouse"
+          }
+        },
+        {
+          "instance": {
+            "openmrs_code": "No Spouse"
+          },
+          "name": "no_spouse",
+          "label": {
+            "English": "No Spouse"
+          }
+        }
+      ]
+    },
+    {
+      "instance": {
+        "openmrs_entity_id": "children"
+      },
+      "type": "text",
+      "name": "has_spouse"
+    }
+  ]
+}

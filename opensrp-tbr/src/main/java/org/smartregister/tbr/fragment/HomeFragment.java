@@ -9,9 +9,11 @@ import android.view.View;
 import android.widget.ListView;
 
 import org.smartregister.tbr.R;
+import org.smartregister.tbr.activity.EmnchFormActivity;
 import org.smartregister.tbr.activity.InTreatmentPatientRegisterActivity;
 import org.smartregister.tbr.activity.PositivePatientRegisterActivity;
 import org.smartregister.tbr.activity.PresumptivePatientRegisterActivity;
+import org.smartregister.tbr.activity.SampleFormActivity;
 import org.smartregister.tbr.adapter.RegisterArrayAdapter;
 import org.smartregister.tbr.application.TbrApplication;
 import org.smartregister.configurableviews.model.Residence;
@@ -96,7 +98,14 @@ public class HomeFragment extends ListFragment {
             initializeRegister(new Intent(this.getActivity(), PositivePatientRegisterActivity.class), register);
         } else if (register.getTitleToken().equals(Register.IN_TREATMENT_PATIENTS)) {
             initializeRegister(new Intent(this.getActivity(), InTreatmentPatientRegisterActivity.class), register);
+        } else if (register.getTitleToken().equals(Register.SAMPLE_FORM)) {
+            initializeRegister(new Intent(this.getActivity(), SampleFormActivity.class), register);
         }
+        else if (register.getTitleToken().equals(Register.EMNCH_FORM)) {
+            initializeRegister(new Intent(this.getActivity(), EmnchFormActivity.class), register);
+        }
+
+
     }
 
     private void initializeRegister(Intent intent, Register register) {
@@ -142,7 +151,25 @@ public class HomeFragment extends ListFragment {
 
         residence.setPosition(2);
         view.setResidence(residence);
+
         values.add(new Register(getActivity(), view, getPatientCountByRegisterType(view.getIdentifier())));
+
+        view = new org.smartregister.configurableviews.model.View();
+        view.setIdentifier(Register.SAMPLE_FORM);
+        view.setLabel(Register.SAMPLE_FORM);
+        residence.setPosition(3);
+        view.setResidence(residence);
+
+        values.add(new Register(getActivity(), view, getPatientCountByRegisterType(view.getIdentifier())));
+
+        view = new org.smartregister.configurableviews.model.View();
+        view.setIdentifier(Register.EMNCH_FORM);
+        view.setLabel(Register.EMNCH_FORM);
+        residence.setPosition(4);
+        view.setResidence(residence);
+
+        values.add(new Register(getActivity(), view, getPatientCountByRegisterType(view.getIdentifier())));
+
         return values;
     }
 }

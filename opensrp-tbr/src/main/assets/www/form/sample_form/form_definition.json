@@ -1,0 +1,26 @@
+{
+  "form_data_definition_version": "1",
+  "form": {
+    "default_bind_path": "/model/instance/odk-opensrp_lg",
+    "bind_type": "ec_sample_form",
+    "ec_bind_type": "ec_sample_form",
+    "fields": [
+      {
+        "name": "id",
+        "shouldLoadValue": true
+      },
+      {
+        "name": "member_type",
+        "bind": "/model/instance/odk-opensrp_lg/member_type"
+      },
+      {
+        "name": "has_spouse",
+        "bind": "/model/instance/odk-opensrp_lg/has_spouse"
+      },
+      {
+        "name": "num_children",
+        "bind": "/model/instance/odk-opensrp_lg/num_children"
+      }
+    ]
+  }
+}

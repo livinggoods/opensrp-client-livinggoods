@@ -18,6 +18,8 @@ public class Register {
     public static final String PRESUMPTIVE_PATIENTS = "presumptive_patients";
     public static final String POSITIVE_PATIENTS = "positive_patients";
     public static final String IN_TREATMENT_PATIENTS = "in_treatment_patients";
+    public static final String SAMPLE_FORM = "sample_form";
+    public static final String EMNCH_FORM = "emnch_form";
     public static final String TAG = Register.class.getCanonicalName();
 
     private String title;

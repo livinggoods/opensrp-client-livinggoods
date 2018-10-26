@@ -1,0 +1,300 @@
+<model>
+    <instance>
+        <assessment_endemic_tbr xmlns:jr="http://openrosa.org/javarosa"
+            xmlns:odk="http://www.opendatakit.org/xforms" xmlns:orx="http://openrosa.org/xforms"
+            id="ec_assessment_endemic_tbr" version="2016-06-29">
+            <formhub>
+                <uuid />
+            </formhub>
+            <inputs>
+                <source>user</source>
+                <source_id />
+                <user>
+                    <is_in_cbds_pilot />
+                    <is_in_emnch_pilot />
+                    <is_in_dispersible_amoxicillin_pilot />
+                </user>
+                <contact>
+                    <_id />
+                    <name />
+                    <date_of_birth />
+                    <sex />
+                </contact>
+            </inputs>
+            <patient_age_in_years>24</patient_age_in_years>
+            <patient_age_in_months>0</patient_age_in_months>
+            <patient_age_in_days />
+            <patient_age_display />
+            <patient_id />
+            <patient_name />
+            <measured_temperature />
+            <symptom_cough />
+            <symptom_indrawn_chest />
+            <symptom_fast_breathing />
+            <symptom_diarrhea />
+            <symptom_fever />
+            <symptom_malaria_test />
+            <symptom_danger_signs />
+            <symptom_danger_signs_codes />
+            <treatment_follow_up />
+            <referral_follow_up />
+            <treat_for_malaria />
+            <infant_danger_signs_str_tmp />
+            <infant_danger_signs_str />
+            <infant_danger_signs_str_len />
+            <danger_signs_str_tmp />
+            <danger_signs_str />
+            <danger_signs_str_len />
+            <syndrome_newborn_disease />
+            <syndrome_fever />
+            <syndrome_fever_rash />
+            <syndrome_fever_bleeding />
+            <syndrome_fever_painful_swelling />
+            <syndrome_yellowness_of_eyes_skin />
+            <syndrome_skin_worm />
+            <syndrome_animal_bite />
+            <syndrome_watery_diarrhoea />
+            <syndrome_chest_illness />
+            <syndrome_weakness />
+            <syndrome_aefi />
+            <is_referral />
+            <needs_muac_follow_up />
+            <needs_anaemia_follow_up />
+            <needs_immunization_follow_up />
+            <suspected_syndromes_tmp />
+            <suspected_syndromes_len />
+            <suspected_syndromes />
+            <p_note />
+            <group_cough>
+                <patient_coughs />
+                <coughing_duration />
+                <chest_indrawing />
+                <difficulty_in_breathing />
+            </group_cough>
+            <group_breathing>
+                <breath_timer />
+                <breath_note />
+                <breath_count />
+                <fast_breathing />
+                <fast_breathing_note_true />
+                <fast_breathing_note_false />
+            </group_breathing>
+            <group_fever>
+                <patient_fever />
+                <fever_note />
+                <patient_temperature />
+                <fever_duration />
+                <treated_past_two_weeks />
+                <mrdt_result />
+                <mrdt_note />
+                <mrdt_hint />
+                <positive_image />
+                <negative_note />
+                <mrdt_source />
+                <mrdt_used_from />
+                <skin_rash />
+                <bleeding />
+                <painful_swelling />
+            </group_fever>
+            <group_diarrhea>
+                <patient_diarrhea />
+                <diarrhea_duration />
+                <diarrhea_episodes />
+                <diarrhea_blood />
+            </group_diarrhea>
+            <group_danger_signs>
+                <infant_danger_signs />
+                <danger_signs />
+            </group_danger_signs>
+            <group_other_symptoms>
+                <n_question />
+                <worm_emerging />
+                <weakness />
+                <injury_related />
+                <animal_bite />
+                <reaction_to_vaccine />
+                <skin_yellowness />
+                <yellowness_duration />
+            </group_other_symptoms>
+            <group_nutrition_assessment>
+                <n_nutrition_assessment />
+                <muac_score />
+                <n_check_marasmus />
+                <n_muac_3_feedback />
+                <n_muac_2_feedback />
+                <n_muac_1_feedback />
+                <n_edema />
+                <has_edema_indentation />
+                <n_anaemia_assessment />
+                <has_paleness />
+                <blood_refills_quickly />
+                <n_patient_has_anaemia />
+                <n_buy_healthy_start />
+            </group_nutrition_assessment>
+            <group_breastfeeding>
+                <mother_breastfeeding />
+                <n_breastfeeding_feedback_yes />
+                <n_breastfeeding_feedback_no />
+                <mother_breastfed_last_24hrs />
+                <n_breastfeeding_feedback_last_24hrs_6mo />
+                <n_breastfeeding_feedback_last_24hrs_12mo />
+                <n_breastfeeding_feedback_last_24hrs_24mo />
+                <fed_solid_foods_count />
+                <n_breastfeeding_feedback_all />
+                <child_breastfed_last_24hrs />
+                <n_breastfeeding_feedback_last_24hrs_60mo />
+                <solid_foods_eaten />
+                <n_solid_foods_feedback />
+            </group_breastfeeding>
+            <group_immunization>
+                <n_confirm_immunization />
+                <child_vaccinated />
+                <n_importance_of_immunization_feedback />
+                <child_immunization_up_to_date />
+                <immunizations_2mo />
+                <immunizations_9mo />
+                <immunizations_18mo />
+            </group_immunization>
+            <group_vita>
+                <vit_a_doses />
+                <n_vit_a_doses />
+            </group_vita>
+            <group_deworming>
+                <deworming_doses />
+                <n_deworming_doses />
+            </group_deworming>
+            <group_diagnosis>
+                <diagnosis_cough />
+                <diagnosis_diarrhea />
+                <diagnosis_fever />
+                <submit />
+                <r_summary />
+                <r_patient_info />
+                <r_symptoms />
+                <r_symptom_cough />
+                <r_symptom_indrawn_chest />
+                <r_symptom_fast_breathing />
+                <r_symptom />
+                <r_symptom_diarrhea />
+                <r_bloody_diarroea />
+                <r_symptom_fever />
+                <r_rash />
+                <r_bleeding />
+                <r_painful_swelling />
+                <r_symptom_malaria_test />
+                <r_symptom_danger_signs />
+                <r_symptom_infant_danger_signs />
+                <r_worm />
+                <r_weakness />
+                <r_injury_related />
+                <r_animal_bite />
+                <r_vaccine_reaction />
+                <r_yellowness />
+                <r_symptom_none />
+                <r_referral />
+                <r_referral_age_under_2 />
+                <r_referral_cough />
+                <r_referral_pneumonia />
+                <r_referral_diarrhea />
+                <r_referral_fever />
+                <r_referral_malaria />
+                <r_referral_danger_signs />
+                <r_syndrome_newborn_disease />
+                <r_syndrome_fever_rash />
+                <r_syndrome_fever />
+                <r_syndrome_yellowness_of_eyes_skin />
+                <r_syndrome_skin_worm />
+                <r_syndrome_animal_bite />
+                <r_syndrome_watery_diarrhoea />
+                <r_syndrome_chest_illness />
+                <r_syndrome_weakness />
+                <r_syndrome_aefi />
+                <r_url />
+                <r_referral_mam />
+                <r_referral_sam />
+                <r_diagnosis />
+                <r_diagnosis_cough />
+                <r_diagnosis_pneumonia />
+                <r_cough_cough_syrup />
+                <r_cough_cough_syrup_1 />
+                <r_cough_cough_syrup_2 />
+                <r_cough_cough_syrup_3 />
+                <gave_cough_syrup />
+                <r_cough_amox />
+                <amox_type />
+                <cough_amox_dosage />
+                <r_cough_amox_1 />
+                <r_cough_amox_3 />
+                <r_cough_amox_4 />
+                <r_cough_amox_dispersible_instructions />
+                <gave_amox />
+                <r_cough_instruction />
+                <r_cough_instruction1 />
+                <r_cough_instruction2 />
+                <r_cough_instruction3 />
+                <r_cough_instruction4 />
+                <r_cough_instruction6 />
+                <r_diagnosis_diarrhea />
+                <r_diarrhea_breastfeeding />
+                <r_diarrhea_breastfeeding1 />
+                <r_diarrhea_ors_infants />
+                <r_diarrhea_ors />
+                <r_diarrhea_ors1 />
+                <r_diarrhea_ors2 />
+                <r_diarrhea_ors3 />
+                <gave_ors />
+                <r_diarrhea_zinc />
+                <r_diarrhea_zinc_1 />
+                <r_diarrhea_zinc_2 />
+                <r_diarrhea_zinc_3 />
+                <gave_zinc />
+                <r_diarrhea_instruction />
+                <r_diarrhea_instructions1 />
+                <r_diarrhea_instructions2 />
+                <r_diarrhea_instructions3 />
+                <r_diarrhea_instructions4 />
+                <r_diarrhea_instructions5 />
+                <r_diarrhea_instructions6 />
+                <r_diagnosis_fever />
+                <r_diagnosis_malaria />
+                <r_fever_al />
+                <r_fever_al_1 />
+                <r_fever_al_2 />
+                <r_fever_al_3 />
+                <r_fever_al_4 />
+                <gave_al />
+                <al_pack />
+                <al_source />
+                <r_fever_paracetamol />
+                <r_fever_paracetamol_1 />
+                <r_fever_paracetamol_2 />
+                <r_fever_paracetamol_3 />
+                <r_fever_paracetamol_4 />
+                <gave_paracetamol />
+                <r_fever_instruction />
+                <r_fever_instructions1 />
+                <r_fever_instructions2 />
+                <r_fever_instructions3 />
+                <r_fever_instructions4 />
+                <r_feeding />
+                <r_feeding_note1 />
+                <r_feeding_note2 />
+                <r_feeding_note3 />
+                <r_feeding_note4 />
+                <r_healthy_tips />
+                <r_healthy_tips_h1 />
+                <r_healthy_tips1 />
+                <r_healthy_tips2 />
+                <r_healthy_tips_h2 />
+                <r_healthy_tips3 />
+                <r_healthy_tips4 />
+                <r_followup_instructions />
+                <r_followup />
+                <r_followup_note />
+            </group_diagnosis>
+            <meta>
+                <instanceID />
+            </meta>
+        </assessment_endemic_tbr>
+    </instance>
+</model>

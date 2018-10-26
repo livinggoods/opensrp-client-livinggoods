@@ -1,0 +1,75 @@
+<form autocomplete="off" class="or clearfix pages" dir="ltr" id="odk_openrp_lg"
+    novalidate="novalidate">
+    <!--This form was created by transforming a OpenRosa-flavored (X)Form using an XSL stylesheet created by Enketo LLC.-->
+    <section class="form-logo"></section>
+    <h3 dir="auto" id="form-title">ODK OpenSRP</h3>
+
+
+    <fieldset class="question simple-select or-appearance-horizontal ">
+        <fieldset>
+            <legend>
+                <span class="question-label active" lang="">Member Type</span>
+            </legend>
+            <div class="option-wrapper">
+                <label class="">
+                    <input name="/odk-opensrp/member_type" data-name="/odk-opensrp/member_type"
+                        data-type-xml="select1" type="radio"
+                        value="employed" />
+                    <span class="option-label active" lang="">Employed</span>
+                </label>
+                <label class="">
+                    <input name="/odk-opensrp/member_type" data-name="/odk-opensrp/member_type"
+                        data-type-xml="select1" type="radio"
+                        value="self_employed" />
+                    <span class="option-label active" lang="">Self Employed</span>
+                </label>
+                <label class="">
+                    <input name="/odk-opensrp/member_type" data-name="/odk-opensrp/member_type"
+                        data-type-xml="select1" type="radio"
+                        value="organized_groups" />
+                    <span class="option-label active" lang="">Organized Groups</span>
+                </label>
+                <label class="">
+                    <input name="/odk-opensrp/member_type" data-name="/odk-opensrp/member_type"
+                        data-type-xml="select1" type="radio"
+                        value="sponsored" />
+                    <span class="option-label active" lang="">Sponsored</span>
+                </label>
+            </div>
+        </fieldset>
+    </fieldset>
+    <fieldset class="question simple-select or-appearance-horizontal ">
+        <fieldset>
+            <legend>
+                <span class="question-label active" lang="">Has Spouse?</span>
+            </legend>
+            <div class="option-wrapper">
+                <label class="">
+                    <input name="/odk-opensrp/has_spouse" data-name="/odk-opensrp/has_spouse"
+                        data-type-xml="select1" type="radio" value="yes" />
+                    <span class="option-label active" lang="">Yes</span>
+                </label>
+                <label class="">
+                    <input name="/odk-opensrp/has_spouse" data-name="/odk-opensrp/has_spouse"
+                        data-type-xml="select1" type="radio" value="no" />
+                    <span class="option-label active" lang="">No</span>
+                </label>
+            </div>
+        </fieldset>
+    </fieldset>
+    <label class="question non-select ">
+        <span class="question-label active" lang="">Number of Children</span>
+        <input name="/odk-opensrp/num_children" data-type-xml="int" type="number" />
+    </label>
+
+    <fieldset style="display:none;" id="or-calculated-items">
+        <label class="calculation non-select ">
+            <input name="/odk-opensrp/meta/instanceID" data-calculate="concat('uuid:', uuid())"
+                data-type-xml="string" type="hidden" />
+        </label>
+        <label class="calculation non-select ">
+            <input name="/odk-opensrp/formhub/uuid" data-calculate="'e59269cf5c7b444283623232cbf87910'"
+                data-type-xml="string" type="hidden" />
+        </label>
+    </fieldset>
+</form>

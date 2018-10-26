@@ -1,0 +1,870 @@
+{
+  "form_data_definition_version": "1",
+  "form": {
+    "default_bind_path": "/model/instance/assessment_endemic_tbr",
+    "bind_type": "ec_assessment_endemic_tbr",
+    "ec_bind_type": "ec_assessment_endemic_tbr",
+    "fields": [
+      {
+        "name": "id",
+        "shouldLoadValue": true
+      },
+      {
+        "name": "patient_age_in_years",
+        "bind": "/model/instance/assessment_endemic_tbr/patient_age_in_years"
+      },
+      {
+        "name": "patient_age_in_months",
+        "bind": "/model/instance/assessment_endemic_tbr/patient_age_in_months"
+      },
+      {
+        "name": "patient_age_in_days",
+        "bind": "/model/instance/assessment_endemic_tbr/patient_age_in_days"
+      },
+      {
+        "name": "patient_age_display",
+        "bind": "/model/instance/assessment_endemic_tbr/patient_age_display"
+      },
+      {
+        "name": "patient_id",
+        "bind": "/model/instance/assessment_endemic_tbr/patient_id"
+      },
+      {
+        "name": "patient_name",
+        "bind": "/model/instance/assessment_endemic_tbr/patient_name"
+      },
+      {
+        "name": "measured_temperature",
+        "bind": "/model/instance/assessment_endemic_tbr/measured_temperature"
+      },
+      {
+        "name": "symptom_cough",
+        "bind": "/model/instance/assessment_endemic_tbr/symptom_cough"
+      },
+      {
+        "name": "symptom_indrawn_chest",
+        "bind": "/model/instance/assessment_endemic_tbr/symptom_indrawn_chest"
+      },
+      {
+        "name": "symptom_fast_breathing",
+        "bind": "/model/instance/assessment_endemic_tbr/symptom_fast_breathing"
+      },
+      {
+        "name": "symptom_diarrhea",
+        "bind": "/model/instance/assessment_endemic_tbr/symptom_diarrhea"
+      },
+      {
+        "name": "symptom_fever",
+        "bind": "/model/instance/assessment_endemic_tbr/symptom_fever"
+      },
+      {
+        "name": "symptom_malaria_test",
+        "bind": "/model/instance/assessment_endemic_tbr/symptom_malaria_test"
+      },
+      {
+        "name": "symptom_danger_signs",
+        "bind": "/model/instance/assessment_endemic_tbr/symptom_danger_signs"
+      },
+      {
+        "name": "symptom_danger_signs_codes",
+        "bind": "/model/instance/assessment_endemic_tbr/symptom_danger_signs_codes"
+      },
+      {
+        "name": "treatment_follow_up",
+        "bind": "/model/instance/assessment_endemic_tbr/treatment_follow_up"
+      },
+      {
+        "name": "referral_follow_up",
+        "bind": "/model/instance/assessment_endemic_tbr/referral_follow_up"
+      },
+      {
+        "name": "treat_for_malaria",
+        "bind": "/model/instance/assessment_endemic_tbr/treat_for_malaria"
+      },
+      {
+        "name": "infant_danger_signs_str_tmp",
+        "bind": "/model/instance/assessment_endemic_tbr/infant_danger_signs_str_tmp"
+      },
+      {
+        "name": "infant_danger_signs_str",
+        "bind": "/model/instance/assessment_endemic_tbr/infant_danger_signs_str"
+      },
+      {
+        "name": "infant_danger_signs_str_len",
+        "bind": "/model/instance/assessment_endemic_tbr/infant_danger_signs_str_len"
+      },
+      {
+        "name": "danger_signs_str_tmp",
+        "bind": "/model/instance/assessment_endemic_tbr/danger_signs_str_tmp"
+      },
+      {
+        "name": "danger_signs_str",
+        "bind": "/model/instance/assessment_endemic_tbr/danger_signs_str"
+      },
+      {
+        "name": "danger_signs_str_len",
+        "bind": "/model/instance/assessment_endemic_tbr/danger_signs_str_len"
+      },
+      {
+        "name": "syndrome_newborn_disease",
+        "bind": "/model/instance/assessment_endemic_tbr/syndrome_newborn_disease"
+      },
+      {
+        "name": "syndrome_fever",
+        "bind": "/model/instance/assessment_endemic_tbr/syndrome_fever"
+      },
+      {
+        "name": "syndrome_fever_rash",
+        "bind": "/model/instance/assessment_endemic_tbr/syndrome_fever_rash"
+      },
+      {
+        "name": "syndrome_fever_bleeding",
+        "bind": "/model/instance/assessment_endemic_tbr/syndrome_fever_bleeding"
+      },
+      {
+        "name": "syndrome_fever_painful_swelling",
+        "bind": "/model/instance/assessment_endemic_tbr/syndrome_fever_painful_swelling"
+      },
+      {
+        "name": "syndrome_yellowness_of_eyes_skin",
+        "bind": "/model/instance/assessment_endemic_tbr/syndrome_yellowness_of_eyes_skin"
+      },
+      {
+        "name": "syndrome_skin_worm",
+        "bind": "/model/instance/assessment_endemic_tbr/syndrome_skin_worm"
+      },
+      {
+        "name": "syndrome_animal_bite",
+        "bind": "/model/instance/assessment_endemic_tbr/syndrome_animal_bite"
+      },
+      {
+        "name": "syndrome_watery_diarrhoea",
+        "bind": "/model/instance/assessment_endemic_tbr/syndrome_watery_diarrhoea"
+      },
+      {
+        "name": "syndrome_chest_illness",
+        "bind": "/model/instance/assessment_endemic_tbr/syndrome_chest_illness"
+      },
+      {
+        "name": "syndrome_weakness",
+        "bind": "/model/instance/assessment_endemic_tbr/syndrome_weakness"
+      },
+      {
+        "name": "syndrome_aefi",
+        "bind": "/model/instance/assessment_endemic_tbr/syndrome_aefi"
+      },
+      {
+        "name": "is_referral",
+        "bind": "/model/instance/assessment_endemic_tbr/is_referral"
+      },
+      {
+        "name": "needs_muac_follow_up",
+        "bind": "/model/instance/assessment_endemic_tbr/needs_muac_follow_up"
+      },
+      {
+        "name": "needs_anaemia_follow_up",
+        "bind": "/model/instance/assessment_endemic_tbr/needs_anaemia_follow_up"
+      },
+      {
+        "name": "needs_immunization_follow_up",
+        "bind": "/model/instance/assessment_endemic_tbr/needs_immunization_follow_up"
+      },
+      {
+        "name": "suspected_syndromes_tmp",
+        "bind": "/model/instance/assessment_endemic_tbr/suspected_syndromes_tmp"
+      },
+      {
+        "name": "suspected_syndromes_len",
+        "bind": "/model/instance/assessment_endemic_tbr/suspected_syndromes_len"
+      },
+      {
+        "name": "suspected_syndromes",
+        "bind": "/model/instance/assessment_endemic_tbr/suspected_syndromes"
+      },
+      {
+        "name": "patient_coughs",
+        "bind": "/model/instance/assessment_endemic_tbr/group_cough/patient_coughs"
+      },
+      {
+        "name": "coughing_duration",
+        "bind": "/model/instance/assessment_endemic_tbr/group_cough/coughing_duration"
+      },
+      {
+        "name": "chest_indrawing",
+        "bind": "/model/instance/assessment_endemic_tbr/group_cough/chest_indrawing"
+      },
+      {
+        "name": "difficulty_in_breathing",
+        "bind": "/model/instance/assessment_endemic_tbr/group_cough/difficulty_in_breathing"
+      },
+      {
+        "name": "breath_count",
+        "bind": "/model/instance/assessment_endemic_tbr/group_breathing/breath_count"
+      },
+      {
+        "name": "fast_breathing",
+        "bind": "/model/instance/assessment_endemic_tbr/group_breathing/fast_breathing"
+      },
+      {
+        "name": "patient_fever",
+        "bind": "/model/instance/assessment_endemic_tbr/group_fever/patient_fever"
+      },
+      {
+        "name": "patient_temperature",
+        "bind": "/model/instance/assessment_endemic_tbr/group_fever/patient_temperature"
+      },
+      {
+        "name": "fever_duration",
+        "bind": "/model/instance/assessment_endemic_tbr/group_fever/fever_duration"
+      },
+      {
+        "name": "treated_past_two_weeks",
+        "bind": "/model/instance/assessment_endemic_tbr/group_fever/treated_past_two_weeks"
+      },
+      {
+        "name": "mrdt_result",
+        "bind": "/model/instance/assessment_endemic_tbr/group_fever/mrdt_result"
+      },
+      {
+        "name": "mrdt_hint",
+        "bind": "/model/instance/assessment_endemic_tbr/group_fever/mrdt_hint"
+      },
+      {
+        "name": "mrdt_source",
+        "bind": "/model/instance/assessment_endemic_tbr/group_fever/mrdt_source"
+      },
+      {
+        "name": "mrdt_used_from",
+        "bind": "/model/instance/assessment_endemic_tbr/group_fever/mrdt_used_from"
+      },
+      {
+        "name": "skin_rash",
+        "bind": "/model/instance/assessment_endemic_tbr/group_fever/skin_rash"
+      },
+      {
+        "name": "bleeding",
+        "bind": "/model/instance/assessment_endemic_tbr/group_fever/bleeding"
+      },
+      {
+        "name": "painful_swelling",
+        "bind": "/model/instance/assessment_endemic_tbr/group_fever/painful_swelling"
+      },
+      {
+        "name": "patient_diarrhea",
+        "bind": "/model/instance/assessment_endemic_tbr/group_diarrhea/patient_diarrhea"
+      },
+      {
+        "name": "diarrhea_duration",
+        "bind": "/model/instance/assessment_endemic_tbr/group_diarrhea/diarrhea_duration"
+      },
+      {
+        "name": "diarrhea_episodes",
+        "bind": "/model/instance/assessment_endemic_tbr/group_diarrhea/diarrhea_episodes"
+      },
+      {
+        "name": "diarrhea_blood",
+        "bind": "/model/instance/assessment_endemic_tbr/group_diarrhea/diarrhea_blood"
+      },
+      {
+        "name": "infant_danger_signs",
+        "bind": "/model/instance/assessment_endemic_tbr/group_danger_signs/infant_danger_signs"
+      },
+      {
+        "name": "danger_signs",
+        "bind": "/model/instance/assessment_endemic_tbr/group_danger_signs/danger_signs"
+      },
+      {
+        "name": "n_question",
+        "bind": "/model/instance/assessment_endemic_tbr/group_other_symptoms/n_question"
+      },
+      {
+        "name": "worm_emerging",
+        "bind": "/model/instance/assessment_endemic_tbr/group_other_symptoms/worm_emerging"
+      },
+      {
+        "name": "weakness",
+        "bind": "/model/instance/assessment_endemic_tbr/group_other_symptoms/weakness"
+      },
+      {
+        "name": "injury_related",
+        "bind": "/model/instance/assessment_endemic_tbr/group_other_symptoms/injury_related"
+      },
+      {
+        "name": "animal_bite",
+        "bind": "/model/instance/assessment_endemic_tbr/group_other_symptoms/animal_bite"
+      },
+      {
+        "name": "reaction_to_vaccine",
+        "bind": "/model/instance/assessment_endemic_tbr/group_other_symptoms/reaction_to_vaccine"
+      },
+      {
+        "name": "skin_yellowness",
+        "bind": "/model/instance/assessment_endemic_tbr/group_other_symptoms/skin_yellowness"
+      },
+      {
+        "name": "yellowness_duration",
+        "bind": "/model/instance/assessment_endemic_tbr/group_other_symptoms/yellowness_duration"
+      },
+      {
+        "name": "n_nutrition_assessment",
+        "bind": "/model/instance/assessment_endemic_tbr/group_nutrition_assessment/n_nutrition_assessment"
+      },
+      {
+        "name": "muac_score",
+        "bind": "/model/instance/assessment_endemic_tbr/group_nutrition_assessment/muac_score"
+      },
+      {
+        "name": "n_check_marasmus",
+        "bind": "/model/instance/assessment_endemic_tbr/group_nutrition_assessment/n_check_marasmus"
+      },
+      {
+        "name": "n_muac_3_feedback",
+        "bind": "/model/instance/assessment_endemic_tbr/group_nutrition_assessment/n_muac_3_feedback"
+      },
+      {
+        "name": "n_muac_2_feedback",
+        "bind": "/model/instance/assessment_endemic_tbr/group_nutrition_assessment/n_muac_2_feedback"
+      },
+      {
+        "name": "n_muac_1_feedback",
+        "bind": "/model/instance/assessment_endemic_tbr/group_nutrition_assessment/n_muac_1_feedback"
+      },
+      {
+        "name": "n_edema",
+        "bind": "/model/instance/assessment_endemic_tbr/group_nutrition_assessment/n_edema"
+      },
+      {
+        "name": "has_edema_indentation",
+        "bind": "/model/instance/assessment_endemic_tbr/group_nutrition_assessment/has_edema_indentation"
+      },
+      {
+        "name": "n_anaemia_assessment",
+        "bind": "/model/instance/assessment_endemic_tbr/group_nutrition_assessment/n_anaemia_assessment"
+      },
+      {
+        "name": "has_paleness",
+        "bind": "/model/instance/assessment_endemic_tbr/group_nutrition_assessment/has_paleness"
+      },
+      {
+        "name": "blood_refills_quickly",
+        "bind": "/model/instance/assessment_endemic_tbr/group_nutrition_assessment/blood_refills_quickly"
+      },
+      {
+        "name": "n_patient_has_anaemia",
+        "bind": "/model/instance/assessment_endemic_tbr/group_nutrition_assessment/n_patient_has_anaemia"
+      },
+      {
+        "name": "n_buy_healthy_start",
+        "bind": "/model/instance/assessment_endemic_tbr/group_nutrition_assessment/n_buy_healthy_start"
+      },
+      {
+        "name": "mother_breastfeeding",
+        "bind": "/model/instance/assessment_endemic_tbr/group_breastfeeding/mother_breastfeeding"
+      },
+      {
+        "name": "n_breastfeeding_feedback_yes",
+        "bind": "/model/instance/assessment_endemic_tbr/group_breastfeeding/n_breastfeeding_feedback_yes"
+      },
+      {
+        "name": "n_breastfeeding_feedback_no",
+        "bind": "/model/instance/assessment_endemic_tbr/group_breastfeeding/n_breastfeeding_feedback_no"
+      },
+      {
+        "name": "mother_breastfed_last_24hrs",
+        "bind": "/model/instance/assessment_endemic_tbr/group_breastfeeding/mother_breastfed_last_24hrs"
+      },
+      {
+        "name": "n_breastfeeding_feedback_last_24hrs_6mo",
+        "bind": "/model/instance/assessment_endemic_tbr/group_breastfeeding/n_breastfeeding_feedback_last_24hrs_6mo"
+      },
+      {
+        "name": "n_breastfeeding_feedback_last_24hrs_12mo",
+        "bind": "/model/instance/assessment_endemic_tbr/group_breastfeeding/n_breastfeeding_feedback_last_24hrs_12mo"
+      },
+      {
+        "name": "n_breastfeeding_feedback_last_24hrs_24mo",
+        "bind": "/model/instance/assessment_endemic_tbr/group_breastfeeding/n_breastfeeding_feedback_last_24hrs_24mo"
+      },
+      {
+        "name": "fed_solid_foods_count",
+        "bind": "/model/instance/assessment_endemic_tbr/group_breastfeeding/fed_solid_foods_count"
+      },
+      {
+        "name": "n_breastfeeding_feedback_all",
+        "bind": "/model/instance/assessment_endemic_tbr/group_breastfeeding/n_breastfeeding_feedback_all"
+      },
+      {
+        "name": "child_breastfed_last_24hrs",
+        "bind": "/model/instance/assessment_endemic_tbr/group_breastfeeding/child_breastfed_last_24hrs"
+      },
+      {
+        "name": "n_breastfeeding_feedback_last_24hrs_60mo",
+        "bind": "/model/instance/assessment_endemic_tbr/group_breastfeeding/n_breastfeeding_feedback_last_24hrs_60mo"
+      },
+      {
+        "name": "solid_foods_eaten",
+        "bind": "/model/instance/assessment_endemic_tbr/group_breastfeeding/solid_foods_eaten"
+      },
+      {
+        "name": "n_solid_foods_feedback",
+        "bind": "/model/instance/assessment_endemic_tbr/group_breastfeeding/n_solid_foods_feedback"
+      },
+      {
+        "name": "n_confirm_immunization",
+        "bind": "/model/instance/assessment_endemic_tbr/group_immunization/n_confirm_immunization"
+      },
+      {
+        "name": "child_vaccinated",
+        "bind": "/model/instance/assessment_endemic_tbr/group_immunization/child_vaccinated"
+      },
+      {
+        "name": "n_importance_of_immunization_feedback",
+        "bind": "/model/instance/assessment_endemic_tbr/group_immunization/n_importance_of_immunization_feedback"
+      },
+      {
+        "name": "child_immunization_up_to_date",
+        "bind": "/model/instance/assessment_endemic_tbr/group_immunization/child_immunization_up_to_date"
+      },
+      {
+        "name": "immunizations_2mo",
+        "bind": "/model/instance/assessment_endemic_tbr/group_immunization/immunizations_2mo"
+      },
+      {
+        "name": "immunizations_9mo",
+        "bind": "/model/instance/assessment_endemic_tbr/group_immunization/immunizations_9mo"
+      },
+      {
+        "name": "immunizations_18mo",
+        "bind": "/model/instance/assessment_endemic_tbr/group_immunization/immunizations_18mo"
+      },
+      {
+        "name": "vit_a_doses",
+        "bind": "/model/instance/assessment_endemic_tbr/group_vita/vit_a_doses"
+      },
+      {
+        "name": "n_vit_a_doses",
+        "bind": "/model/instance/assessment_endemic_tbr/group_vita/n_vit_a_doses"
+      },
+      {
+        "name": "deworming_doses",
+        "bind": "/model/instance/assessment_endemic_tbr/group_deworming/deworming_doses"
+      },
+      {
+        "name": "n_deworming_doses",
+        "bind": "/model/instance/assessment_endemic_tbr/group_deworming/n_deworming_doses"
+      },
+      {
+        "name": "diagnosis_cough",
+        "bind": "/model/instance/assessment_endemic_tbr/group_diagnosis/diagnosis_cough"
+      },
+      {
+        "name": "diagnosis_diarrhea",
+        "bind": "/model/instance/assessment_endemic_tbr/group_diagnosis/diagnosis_diarrhea"
+      },
+      {
+        "name": "diagnosis_fever",
+        "bind": "/model/instance/assessment_endemic_tbr/group_diagnosis/diagnosis_fever"
+      },
+      {
+        "name": "submit",
+        "bind": "/model/instance/assessment_endemic_tbr/group_diagnosis/submit"
+      },
+      {
+        "name": "r_summary",
+        "bind": "/model/instance/assessment_endemic_tbr/group_diagnosis/r_summary"
+      },
+      {
+        "name": "r_patient_info",
+        "bind": "/model/instance/assessment_endemic_tbr/group_diagnosis/r_patient_info"
+      },
+      {
+        "name": "r_symptoms",
+        "bind": "/model/instance/assessment_endemic_tbr/group_diagnosis/r_symptoms"
+      },
+      {
+        "name": "r_symptom_cough",
+        "bind": "/model/instance/assessment_endemic_tbr/group_diagnosis/r_symptom_cough"
+      },
+      {
+        "name": "r_symptom_indrawn_chest",
+        "bind": "/model/instance/assessment_endemic_tbr/group_diagnosis/r_symptom_indrawn_chest"
+      },
+      {
+        "name": "r_symptom_fast_breathing",
+        "bind": "/model/instance/assessment_endemic_tbr/group_diagnosis/r_symptom_fast_breathing"
+      },
+      {
+        "name": "r_symptom",
+        "bind": "/model/instance/assessment_endemic_tbr/group_diagnosis/r_symptom"
+      },
+      {
+        "name": "r_symptom_diarrhea",
+        "bind": "/model/instance/assessment_endemic_tbr/group_diagnosis/r_symptom_diarrhea"
+      },
+      {
+        "name": "r_bloody_diarroea",
+        "bind": "/model/instance/assessment_endemic_tbr/group_diagnosis/r_bloody_diarroea"
+      },
+      {
+        "name": "r_symptom_fever",
+        "bind": "/model/instance/assessment_endemic_tbr/group_diagnosis/r_symptom_fever"
+      },
+      {
+        "name": "r_rash",
+        "bind": "/model/instance/assessment_endemic_tbr/group_diagnosis/r_rash"
+      },
+      {
+        "name": "r_bleeding",
+        "bind": "/model/instance/assessment_endemic_tbr/group_diagnosis/r_bleeding"
+      },
+      {
+        "name": "r_painful_swelling",
+        "bind": "/model/instance/assessment_endemic_tbr/group_diagnosis/r_painful_swelling"
+      },
+      {
+        "name": "r_symptom_malaria_test",
+        "bind": "/model/instance/assessment_endemic_tbr/group_diagnosis/r_symptom_malaria_test"
+      },
+      {
+        "name": "r_symptom_danger_signs",
+        "bind": "/model/instance/assessment_endemic_tbr/group_diagnosis/r_symptom_danger_signs"
+      },
+      {
+        "name": "r_symptom_infant_danger_signs",
+        "bind": "/model/instance/assessment_endemic_tbr/group_diagnosis/r_symptom_infant_danger_signs"
+      },
+      {
+        "name": "r_worm",
+        "bind": "/model/instance/assessment_endemic_tbr/group_diagnosis/r_worm"
+      },
+      {
+        "name": "r_weakness",
+        "bind": "/model/instance/assessment_endemic_tbr/group_diagnosis/r_weakness"
+      },
+      {
+        "name": "r_injury_related",
+        "bind": "/model/instance/assessment_endemic_tbr/group_diagnosis/r_injury_related"
+      },
+      {
+        "name": "r_animal_bite",
+        "bind": "/model/instance/assessment_endemic_tbr/group_diagnosis/r_animal_bite"
+      },
+      {
+        "name": "r_vaccine_reaction",
+        "bind": "/model/instance/assessment_endemic_tbr/group_diagnosis/r_vaccine_reaction"
+      },
+      {
+        "name": "r_yellowness",
+        "bind": "/model/instance/assessment_endemic_tbr/group_diagnosis/r_yellowness"
+      },
+      {
+        "name": "r_symptom_none",
+        "bind": "/model/instance/assessment_endemic_tbr/group_diagnosis/r_symptom_none"
+      },
+      {
+        "name": "r_referral",
+        "bind": "/model/instance/assessment_endemic_tbr/group_diagnosis/r_referral"
+      },
+      {
+        "name": "r_referral_age_under_2",
+        "bind": "/model/instance/assessment_endemic_tbr/group_diagnosis/r_referral_age_under_2"
+      },
+      {
+        "name": "r_referral_cough",
+        "bind": "/model/instance/assessment_endemic_tbr/group_diagnosis/r_referral_cough"
+      },
+      {
+        "name": "r_referral_pneumonia",
+        "bind": "/model/instance/assessment_endemic_tbr/group_diagnosis/r_referral_pneumonia"
+      },
+      {
+        "name": "r_referral_diarrhea",
+        "bind": "/model/instance/assessment_endemic_tbr/group_diagnosis/r_referral_diarrhea"
+      },
+      {
+        "name": "r_referral_fever",
+        "bind": "/model/instance/assessment_endemic_tbr/group_diagnosis/r_referral_fever"
+      },
+      {
+        "name": "r_referral_malaria",
+        "bind": "/model/instance/assessment_endemic_tbr/group_diagnosis/r_referral_malaria"
+      },
+      {
+        "name": "r_referral_danger_signs",
+        "bind": "/model/instance/assessment_endemic_tbr/group_diagnosis/r_referral_danger_signs"
+      },
+      {
+        "name": "r_syndrome_newborn_disease",
+        "bind": "/model/instance/assessment_endemic_tbr/group_diagnosis/r_syndrome_newborn_disease"
+      },
+      {
+        "name": "r_syndrome_fever_rash",
+        "bind": "/model/instance/assessment_endemic_tbr/group_diagnosis/r_syndrome_fever_rash"
+      },
+      {
+        "name": "r_syndrome_fever",
+        "bind": "/model/instance/assessment_endemic_tbr/group_diagnosis/r_syndrome_fever"
+      },
+      {
+        "name": "r_syndrome_yellowness_of_eyes_skin",
+        "bind": "/model/instance/assessment_endemic_tbr/group_diagnosis/r_syndrome_yellowness_of_eyes_skin"
+      },
+      {
+        "name": "r_syndrome_skin_worm",
+        "bind": "/model/instance/assessment_endemic_tbr/group_diagnosis/r_syndrome_skin_worm"
+      },
+      {
+        "name": "r_syndrome_animal_bite",
+        "bind": "/model/instance/assessment_endemic_tbr/group_diagnosis/r_syndrome_animal_bite"
+      },
+      {
+        "name": "r_syndrome_watery_diarrhoea",
+        "bind": "/model/instance/assessment_endemic_tbr/group_diagnosis/r_syndrome_watery_diarrhoea"
+      },
+      {
+        "name": "r_syndrome_chest_illness",
+        "bind": "/model/instance/assessment_endemic_tbr/group_diagnosis/r_syndrome_chest_illness"
+      },
+      {
+        "name": "r_syndrome_weakness",
+        "bind": "/model/instance/assessment_endemic_tbr/group_diagnosis/r_syndrome_weakness"
+      },
+      {
+        "name": "r_syndrome_aefi",
+        "bind": "/model/instance/assessment_endemic_tbr/group_diagnosis/r_syndrome_aefi"
+      },
+      {
+        "name": "r_url",
+        "bind": "/model/instance/assessment_endemic_tbr/group_diagnosis/r_url"
+      },
+      {
+        "name": "r_referral_mam",
+        "bind": "/model/instance/assessment_endemic_tbr/group_diagnosis/r_referral_mam"
+      },
+      {
+        "name": "r_referral_sam",
+        "bind": "/model/instance/assessment_endemic_tbr/group_diagnosis/r_referral_sam"
+      },
+      {
+        "name": "r_diagnosis",
+        "bind": "/model/instance/assessment_endemic_tbr/group_diagnosis/r_diagnosis"
+      },
+      {
+        "name": "r_diagnosis_cough",
+        "bind": "/model/instance/assessment_endemic_tbr/group_diagnosis/r_diagnosis_cough"
+      },
+      {
+        "name": "r_diagnosis_pneumonia",
+        "bind": "/model/instance/assessment_endemic_tbr/group_diagnosis/r_diagnosis_pneumonia"
+      },
+      {
+        "name": "r_cough_cough_syrup",
+        "bind": "/model/instance/assessment_endemic_tbr/group_diagnosis/r_cough_cough_syrup"
+      },
+      {
+        "name": "r_cough_cough_syrup_1",
+        "bind": "/model/instance/assessment_endemic_tbr/group_diagnosis/r_cough_cough_syrup_1"
+      },
+      {
+        "name": "r_cough_cough_syrup_2",
+        "bind": "/model/instance/assessment_endemic_tbr/group_diagnosis/r_cough_cough_syrup_2"
+      },
+      {
+        "name": "r_cough_cough_syrup_3",
+        "bind": "/model/instance/assessment_endemic_tbr/group_diagnosis/r_cough_cough_syrup_3"
+      },
+      {
+        "name": "gave_cough_syrup",
+        "bind": "/model/instance/assessment_endemic_tbr/group_diagnosis/gave_cough_syrup"
+      },
+      {
+        "name": "r_cough_amox",
+        "bind": "/model/instance/assessment_endemic_tbr/group_diagnosis/r_cough_amox"
+      },
+      {
+        "name": "amox_type",
+        "bind": "/model/instance/assessment_endemic_tbr/group_diagnosis/amox_type"
+      },
+      {
+        "name": "cough_amox_dosage",
+        "bind": "/model/instance/assessment_endemic_tbr/group_diagnosis/cough_amox_dosage"
+      },
+      {
+        "name": "r_cough_amox_1",
+        "bind": "/model/instance/assessment_endemic_tbr/group_diagnosis/r_cough_amox_1"
+      },
+      {
+        "name": "r_cough_amox_3",
+        "bind": "/model/instance/assessment_endemic_tbr/group_diagnosis/r_cough_amox_3"
+      },
+      {
+        "name": "r_cough_amox_4",
+        "bind": "/model/instance/assessment_endemic_tbr/group_diagnosis/r_cough_amox_4"
+      },
+      {
+        "name": "gave_amox",
+        "bind": "/model/instance/assessment_endemic_tbr/group_diagnosis/gave_amox"
+      },
+      {
+        "name": "r_diagnosis_diarrhea",
+        "bind": "/model/instance/assessment_endemic_tbr/group_diagnosis/r_diagnosis_diarrhea"
+      },
+      {
+        "name": "r_diarrhea_breastfeeding",
+        "bind": "/model/instance/assessment_endemic_tbr/group_diagnosis/r_diarrhea_breastfeeding"
+      },
+      {
+        "name": "r_diarrhea_breastfeeding1",
+        "bind": "/model/instance/assessment_endemic_tbr/group_diagnosis/r_diarrhea_breastfeeding1"
+      },
+      {
+        "name": "r_diarrhea_ors_infants",
+        "bind": "/model/instance/assessment_endemic_tbr/group_diagnosis/r_diarrhea_ors_infants"
+      },
+      {
+        "name": "r_diarrhea_ors",
+        "bind": "/model/instance/assessment_endemic_tbr/group_diagnosis/r_diarrhea_ors"
+      },
+      {
+        "name": "r_diarrhea_ors1",
+        "bind": "/model/instance/assessment_endemic_tbr/group_diagnosis/r_diarrhea_ors1"
+      },
+      {
+        "name": "r_diarrhea_ors2",
+        "bind": "/model/instance/assessment_endemic_tbr/group_diagnosis/r_diarrhea_ors2"
+      },
+      {
+        "name": "r_diarrhea_ors3",
+        "bind": "/model/instance/assessment_endemic_tbr/group_diagnosis/r_diarrhea_ors3"
+      },
+      {
+        "name": "gave_ors",
+        "bind": "/model/instance/assessment_endemic_tbr/group_diagnosis/gave_ors"
+      },
+      {
+        "name": "r_diarrhea_zinc",
+        "bind": "/model/instance/assessment_endemic_tbr/group_diagnosis/r_diarrhea_zinc"
+      },
+      {
+        "name": "r_diarrhea_zinc_1",
+        "bind": "/model/instance/assessment_endemic_tbr/group_diagnosis/r_diarrhea_zinc_1"
+      },
+      {
+        "name": "r_diarrhea_zinc_2",
+        "bind": "/model/instance/assessment_endemic_tbr/group_diagnosis/r_diarrhea_zinc_2"
+      },
+      {
+        "name": "r_diarrhea_zinc_3",
+        "bind": "/model/instance/assessment_endemic_tbr/group_diagnosis/r_diarrhea_zinc_3"
+      },
+      {
+        "name": "gave_zinc",
+        "bind": "/model/instance/assessment_endemic_tbr/group_diagnosis/gave_zinc"
+      },
+      {
+        "name": "r_diagnosis_fever",
+        "bind": "/model/instance/assessment_endemic_tbr/group_diagnosis/r_diagnosis_fever"
+      },
+      {
+        "name": "r_diagnosis_malaria",
+        "bind": "/model/instance/assessment_endemic_tbr/group_diagnosis/r_diagnosis_malaria"
+      },
+      {
+        "name": "r_fever_al",
+        "bind": "/model/instance/assessment_endemic_tbr/group_diagnosis/r_fever_al"
+      },
+      {
+        "name": "r_fever_al_1",
+        "bind": "/model/instance/assessment_endemic_tbr/group_diagnosis/r_fever_al_1"
+      },
+      {
+        "name": "r_fever_al_2",
+        "bind": "/model/instance/assessment_endemic_tbr/group_diagnosis/r_fever_al_2"
+      },
+      {
+        "name": "r_fever_al_3",
+        "bind": "/model/instance/assessment_endemic_tbr/group_diagnosis/r_fever_al_3"
+      },
+      {
+        "name": "r_fever_al_4",
+        "bind": "/model/instance/assessment_endemic_tbr/group_diagnosis/r_fever_al_4"
+      },
+      {
+        "name": "gave_al",
+        "bind": "/model/instance/assessment_endemic_tbr/group_diagnosis/gave_al"
+      },
+      {
+        "name": "al_pack",
+        "bind": "/model/instance/assessment_endemic_tbr/group_diagnosis/al_pack"
+      },
+      {
+        "name": "al_source",
+        "bind": "/model/instance/assessment_endemic_tbr/group_diagnosis/al_source"
+      },
+      {
+        "name": "r_fever_paracetamol",
+        "bind": "/model/instance/assessment_endemic_tbr/group_diagnosis/r_fever_paracetamol"
+      },
+      {
+        "name": "r_fever_paracetamol_1",
+        "bind": "/model/instance/assessment_endemic_tbr/group_diagnosis/r_fever_paracetamol_1"
+      },
+      {
+        "name": "r_fever_paracetamol_2",
+        "bind": "/model/instance/assessment_endemic_tbr/group_diagnosis/r_fever_paracetamol_2"
+      },
+      {
+        "name": "r_fever_paracetamol_3",
+        "bind": "/model/instance/assessment_endemic_tbr/group_diagnosis/r_fever_paracetamol_3"
+      },
+      {
+        "name": "r_fever_paracetamol_4",
+        "bind": "/model/instance/assessment_endemic_tbr/group_diagnosis/r_fever_paracetamol_4"
+      },
+      {
+        "name": "gave_paracetamol",
+        "bind": "/model/instance/assessment_endemic_tbr/group_diagnosis/gave_paracetamol"
+      },
+      {
+        "name": "r_feeding",
+        "bind": "/model/instance/assessment_endemic_tbr/group_diagnosis/r_feeding"
+      },
+      {
+        "name": "r_healthy_tips",
+        "bind": "/model/instance/assessment_endemic_tbr/group_diagnosis/r_healthy_tips"
+      },
+      {
+        "name": "r_healthy_tips_h1",
+        "bind": "/model/instance/assessment_endemic_tbr/group_diagnosis/r_healthy_tips_h1"
+      },
+      {
+        "name": "r_healthy_tips1",
+        "bind": "/model/instance/assessment_endemic_tbr/group_diagnosis/r_healthy_tips1"
+      },
+      {
+        "name": "r_healthy_tips2",
+        "bind": "/model/instance/assessment_endemic_tbr/group_diagnosis/r_healthy_tips2"
+      },
+      {
+        "name": "r_healthy_tips_h2",
+        "bind": "/model/instance/assessment_endemic_tbr/group_diagnosis/r_healthy_tips_h2"
+      },
+      {
+        "name": "r_healthy_tips3",
+        "bind": "/model/instance/assessment_endemic_tbr/group_diagnosis/r_healthy_tips3"
+      },
+      {
+        "name": "r_healthy_tips4",
+        "bind": "/model/instance/assessment_endemic_tbr/group_diagnosis/r_healthy_tips4"
+      },
+      {
+        "name": "r_followup",
+        "bind": "/model/instance/assessment_endemic_tbr/group_diagnosis/r_followup"
+      },
+      {
+        "name": "instanceID",
+        "bind": "/model/instance/assessment_endemic_tbr/meta/instanceID"
+      }
+    ]
+  }
+}

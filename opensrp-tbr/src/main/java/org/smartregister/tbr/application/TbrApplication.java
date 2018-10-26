@@ -110,7 +110,7 @@ public class TbrApplication extends DrishtiApplication {
             String username = getContext().userService().getAllSharedPreferences().fetchRegisteredANM();
             password = getContext().userService().getGroupId(username);
         }
-        return password;
+        return "password";
     }
 
     @Override

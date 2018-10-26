@@ -155,6 +155,7 @@ public class EnketoFormUtils {
                                                                      overrides) throws Exception {
         JSONObject formSubmission = XML.toJSONObject(formData);
 
+
         //FileUtilities fu = new FileUtilities();
         //fu.write("xmlform.txt", formData);
         //fu.write("xmlformsubmission.txt", formSubmission.toString());
@@ -215,7 +216,7 @@ public class EnketoFormUtils {
         String instance = formDefinition.toString();
         FormSubmission fs = new FormSubmission(instanceId, entityId, formName, instance,
                 clientVersion, SyncStatus.PENDING, formDefinitionVersionString);
-
+        System.out.println(fs.getForm());
         generateClientAndEventModelsForFormSubmission(fs, formName);
 
         return fs;

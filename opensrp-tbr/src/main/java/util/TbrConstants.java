@@ -97,6 +97,14 @@ TbrConstants extends AllConstants {
         public static final String INTREATMENT_REGISTER_HEADER = "intreatment_register_header";
         public static final String INTREATMENT_REGISTER_ROW = "intreatment_register_row";
 
+        public static final String SAMPLE_FORM = "sample_form";
+        public static final String SAMPLE_FORM_HEADER = "sample_form_header";
+        public static final String SAMPLE_FORM_ROW = "sample_form_row";
+
+        public static final String EMNCH_FORM = "emnch_form";
+        public static final String EMNCH_FORM_HEADER = "emnch_form_header";
+        public static final String EMNCH_FORM_ROW = "emnch_form_row";
+
     }
 
     public static final class ENKETO_FORMS {
@@ -112,6 +120,8 @@ TbrConstants extends AllConstants {
         public static final String ADD_TB_CONTACT = "add_tb_contact";
         public static final String ADD_IN_TREATMENT_PATIENT = "add_intreatment_patient";
         public static final String CONTACT_SCREENING = "contact_screening";
+        public static final String SAMPLE_FORM = "sample_form";
+        public static final String EMNCH_FORM = "emnch_form";
 
     }
 }

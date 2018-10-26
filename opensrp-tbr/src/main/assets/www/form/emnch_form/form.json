@@ -1,0 +1,3127 @@
+{
+  "name": "EmnchForm",
+  "title": "Emnch Form",
+  "sms_keyword": "ec_assessment_endemic_tbr",
+  "default_language": "English",
+  "instance": {
+    "encounter_type": "Emch Form"
+  },
+  "version": "201801230940",
+  "id_string": "ec_assessment_endemic_tbr",
+  "type": "survey",
+  "children": [
+    {
+      "instance": {
+        "openmrs_entity_id": "",
+        "openmrs_entity": "concept"
+      },
+      "label": {
+        "English": "How many Six packs did you give ?"
+      },
+      "type": "select one",
+      "name": "al_pack",
+      "children": [
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "6",
+          "label": {
+            "English": "1 Pack"
+          }
+        },
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "12",
+          "label": {
+            "English": "2 Packs"
+          }
+        },
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "18",
+          "label": {
+            "English": "3 Packs"
+          }
+        },
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "24",
+          "label": {
+            "English": "4 Packs"
+          }
+        }
+      ]
+    },
+    {
+      "instance": {
+        "openmrs_entity_id": "",
+        "openmrs_entity": "concept"
+      },
+      "label": {
+        "English": "AL given was from ?"
+      },
+      "type": "select one",
+      "name": "al_source",
+      "children": [
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "lg",
+          "label": {
+            "English": "LG"
+          }
+        },
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "government",
+          "label": {
+            "English": "Government"
+          }
+        },
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "other",
+          "label": {
+            "English": "Other"
+          }
+        }
+      ]
+    },
+    {
+      "instance": {
+        "openmrs_entity_id": "",
+        "openmrs_entity": "concept"
+      },
+      "label": {
+        "English": "What type of Amoxicilin do you have in stock?"
+      },
+      "type": "select one",
+      "name": "amox_type",
+      "children": [
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "non_dispersible",
+          "label": {
+            "English": "Amoxicillin Suspension"
+          }
+        },
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "dispersible",
+          "label": {
+            "English": "Amoxicillin Dispersible"
+          }
+        }
+      ]
+    },
+    {
+      "instance": {
+        "openmrs_entity_id": "",
+        "openmrs_entity": "concept"
+      },
+      "label": {
+        "English": "Animal bite"
+      },
+      "type": "select one",
+      "name": "animal_bite",
+      "children": [
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "yes",
+          "label": {
+            "English": "Yes"
+          }
+        },
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "no",
+          "label": {
+            "English": "No"
+          }
+        }
+      ]
+    },
+    {
+      "instance": {
+        "openmrs_entity_id": "",
+        "openmrs_entity": "concept"
+      },
+      "label": {
+        "English": "Does ${patient_name} have bleeding from nose, mouth, skin, other sites?"
+      },
+      "type": "select one",
+      "name": "bleeding",
+      "children": [
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "yes",
+          "label": {
+            "English": "Yes"
+          }
+        },
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "no",
+          "label": {
+            "English": "No"
+          }
+        }
+      ]
+    },
+    {
+      "instance": {
+        "openmrs_entity_id": "",
+        "openmrs_entity": "concept"
+      },
+      "label": {
+        "English": "Assess the child's finger. Press on the finger for 5 seconds. Do the capilllaries refill quickly with blood? i.e less than 3 seconds"
+      },
+      "type": "select one",
+      "name": "blood_refills_quickly",
+      "children": [
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "yes",
+          "label": {
+            "English": "Yes"
+          }
+        },
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "no",
+          "label": {
+            "English": "No"
+          }
+        }
+      ]
+    },
+    {
+      "instance": {
+        "openmrs_entity_id": "",
+        "openmrs_entity": "concept"
+      },
+      "label": {
+        "English": "Is there chest indrawing?"
+      },
+      "type": "select one",
+      "name": "chest_indrawing",
+      "children": [
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "yes",
+          "label": {
+            "English": "Yes"
+          }
+        },
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "no",
+          "label": {
+            "English": "No"
+          }
+        }
+      ]
+    },
+    {
+      "instance": {
+        "openmrs_entity_id": "",
+        "openmrs_entity": "concept"
+      },
+      "label": {
+        "English": "Did your child breastfeed in the last 24 hours"
+      },
+      "type": "select one",
+      "name": "child_breastfed_last_24hrs",
+      "children": [
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "yes",
+          "label": {
+            "English": "Yes"
+          }
+        },
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "no",
+          "label": {
+            "English": "No"
+          }
+        }
+      ]
+    },
+    {
+      "instance": {
+        "openmrs_entity_id": "",
+        "openmrs_entity": "concept"
+      },
+      "label": {
+        "English": "Is the child's immunization up to date? "
+      },
+      "type": "select one",
+      "name": "child_immunization_up_to_date",
+      "children": [
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "yes",
+          "label": {
+            "English": "Yes"
+          }
+        },
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "no",
+          "label": {
+            "English": "No"
+          }
+        }
+      ]
+    },
+    {
+      "instance": {
+        "openmrs_entity_id": "",
+        "openmrs_entity": "concept"
+      },
+      "label": {
+        "English": "Has ${patient_name} received any vaccines?"
+      },
+      "type": "select one",
+      "name": "child_vaccinated",
+      "children": [
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "yes",
+          "label": {
+            "English": "Yes"
+          }
+        },
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "no",
+          "label": {
+            "English": "No"
+          }
+        }
+      ]
+    },
+    {
+      "instance": {
+        "openmrs_entity_id": "",
+        "openmrs_entity": "concept"
+      },
+      "label": {
+        "English": "How long has this cough lasted?"
+      },
+      "type": "select one",
+      "name": "coughing_duration",
+      "children": [
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "1",
+          "label": {
+            "English": "1 day or less"
+          }
+        },
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "2",
+          "label": {
+            "English": "2 days"
+          }
+        },
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "3",
+          "label": {
+            "English": "3 days"
+          }
+        },
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "4",
+          "label": {
+            "English": "4 days - 1 week "
+          }
+        },
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "4",
+          "label": {
+            "English": "4 days - 1 week "
+          }
+        }
+      ]
+    },
+    {
+      "instance": {
+        "openmrs_entity_id": "",
+        "openmrs_entity": "concept"
+      },
+      "label": {
+        "English": "Is there blood in the diarrhoea?"
+      },
+      "type": "select one",
+      "name": "diarrhea_blood",
+      "children": [
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "yes",
+          "label": {
+            "English": "Yes"
+          }
+        },
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "no",
+          "label": {
+            "English": "No"
+          }
+        }
+      ]
+    },
+    {
+      "instance": {
+        "openmrs_entity_id": "",
+        "openmrs_entity": "concept"
+      },
+      "label": {
+        "English": "Relationship to Index Patient"
+      },
+      "type": "select one",
+      "name": "diarrhea_duration",
+      "children": [
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "1",
+          "label": {
+            "English": "1 day or less"
+          }
+        },
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "2",
+          "label": {
+            "English": "2 days"
+          }
+        },
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "3",
+          "label": {
+            "English": "3 days"
+          }
+        },
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "7",
+          "label": {
+            "English": "4 days - 1 week "
+          }
+        },
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "14",
+          "label": {
+            "English": "1 - 2 weeks "
+          }
+        },
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "100",
+          "label": {
+            "English": "2 weeks or more"
+          }
+        }
+      ]
+    },
+    {
+      "instance": {
+        "openmrs_entity_id": "",
+        "openmrs_entity": "concept"
+      },
+      "label": {
+        "English": "How many episodes of watery diarrhoea stool has ${patient_name} had in the last 24hrs?"
+      },
+      "type": "select one",
+      "name": "diarrhea_episodes",
+      "children": [
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "2",
+          "label": {
+            "English": "Less than 3"
+          }
+        },
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "3",
+          "label": {
+            "English": "3 or More"
+          }
+        }
+      ]
+    },
+    {
+      "instance": {
+        "openmrs_entity_id": "",
+        "openmrs_entity": "concept"
+      },
+      "label": {
+        "English": "Difficuilty in breathing?"
+      },
+      "type": "select one",
+      "name": "difficulty_in_breathing",
+      "children": [
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "yes",
+          "label": {
+            "English": "Yes"
+          }
+        },
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "no",
+          "label": {
+            "English": "No"
+          }
+        }
+      ]
+    },
+    {
+      "instance": {
+        "openmrs_entity_id": "",
+        "openmrs_entity": "concept"
+      },
+      "label": {
+        "English": "In the last 24 hours, how many times has your child eaten any solid or semi-solid foods?"
+      },
+      "type": "select one",
+      "name": "fed_solid_foods_count",
+      "children": [
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "0",
+          "label": {
+            "English": "0"
+          }
+        },
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "1",
+          "label": {
+            "English": "1"
+          }
+        },
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "2",
+          "label": {
+            "English": "2"
+          }
+        },
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "3",
+          "label": {
+            "English": "3"
+          }
+        },
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "4",
+          "label": {
+            "English": "4"
+          }
+        },
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "5",
+          "label": {
+            "English": "5"
+          }
+        },
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "6",
+          "label": {
+            "English": "6"
+          }
+        }
+      ]
+    },
+    {
+      "instance": {
+        "openmrs_entity_id": "",
+        "openmrs_entity": "concept"
+      },
+      "label": {
+        "English": "How long has the fever lasted?"
+      },
+      "type": "select one",
+      "name": "fever_duration",
+      "children": [
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "1",
+          "label": {
+            "English": "1 day or less"
+          }
+        },
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "2",
+          "label": {
+            "English": "2 days"
+          }
+        },
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "3",
+          "label": {
+            "English": "3 days"
+          }
+        },
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "7",
+          "label": {
+            "English": "4 days - 1 week "
+          }
+        },
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "14",
+          "label": {
+            "English": "1 - 2 weeks "
+          }
+        },
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "100",
+          "label": {
+            "English": "2 weeks or more"
+          }
+        }
+      ]
+    },
+    {
+      "instance": {
+        "openmrs_entity_id": "",
+        "openmrs_entity": "concept"
+      },
+      "label": {
+        "English": "Did you give AL?"
+      },
+      "type": "select one",
+      "name": "gave_al",
+      "children": [
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "yes",
+          "label": {
+            "English": "Yes"
+          }
+        },
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "no",
+          "label": {
+            "English": "No"
+          }
+        }
+      ]
+    },
+    {
+      "instance": {
+        "openmrs_entity_id": "",
+        "openmrs_entity": "concept"
+      },
+      "label": {
+        "English": "Did you give Amoxicillin?"
+      },
+      "type": "select one",
+      "name": "gave_amox",
+      "children": [
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "yes",
+          "label": {
+            "English": "Yes"
+          }
+        },
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "no",
+          "label": {
+            "English": "No"
+          }
+        }
+      ]
+    },
+    {
+      "instance": {
+        "openmrs_entity_id": "",
+        "openmrs_entity": "concept"
+      },
+      "label": {
+        "English": "Did you give Cough Syrup?"
+      },
+      "type": "select one",
+      "name": "gave_cough_syrup",
+      "children": [
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "yes",
+          "label": {
+            "English": "Yes"
+          }
+        },
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "no",
+          "label": {
+            "English": "No"
+          }
+        }
+      ]
+    },
+    {
+      "instance": {
+        "openmrs_entity_id": "",
+        "openmrs_entity": "concept"
+      },
+      "label": {
+        "English": "Did you give ORS?"
+      },
+      "type": "select one",
+      "name": "gave_ors",
+      "children": [
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "yes",
+          "label": {
+            "English": "Yes"
+          }
+        },
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "no",
+          "label": {
+            "English": "No"
+          }
+        }
+      ]
+    },
+    {
+      "instance": {
+        "openmrs_entity_id": "",
+        "openmrs_entity": "concept"
+      },
+      "label": {
+        "English": "Did you give Paracetamol?"
+      },
+      "type": "select one",
+      "name": "gave_paracetamol",
+      "children": [
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "yes",
+          "label": {
+            "English": "Yes"
+          }
+        },
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "no",
+          "label": {
+            "English": "No"
+          }
+        }
+      ]
+    },
+    {
+      "instance": {
+        "openmrs_entity_id": "",
+        "openmrs_entity": "concept"
+      },
+      "label": {
+        "English": "Did you give Zinc?"
+      },
+      "type": "select one",
+      "name": "gave_zinc",
+      "children": [
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "yes",
+          "label": {
+            "English": "Yes"
+          }
+        },
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "no",
+          "label": {
+            "English": "No"
+          }
+        }
+      ]
+    },
+    {
+      "instance": {
+        "openmrs_entity_id": "",
+        "openmrs_entity": "concept"
+      },
+      "label": {
+        "English": "Does the pressing form an identation?"
+      },
+      "type": "select one",
+      "name": "has_edema_indentation",
+      "children": [
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "yes",
+          "label": {
+            "English": "Yes"
+          }
+        },
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "no",
+          "label": {
+            "English": "No"
+          }
+        }
+      ]
+    },
+    {
+      "instance": {
+        "openmrs_entity_id": "",
+        "openmrs_entity": "concept"
+      },
+      "label": {
+        "English": "Is there paleness noted on the palm of the hands, under the eyelids and tongue?"
+      },
+      "type": "select one",
+      "name": "has_paleness",
+      "children": [
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "yes",
+          "label": {
+            "English": "Yes"
+          }
+        },
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "no",
+          "label": {
+            "English": "No"
+          }
+        }
+      ]
+    },
+    {
+      "instance": {
+        "openmrs_entity_id": "",
+        "openmrs_entity": "concept"
+      },
+      "label": {
+        "English": "Is the weakness due to an injury?"
+      },
+      "type": "select one",
+      "name": "injury_related",
+      "children": [
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "yes",
+          "label": {
+            "English": "Yes"
+          }
+        },
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "no",
+          "label": {
+            "English": "No"
+          }
+        }
+      ]
+    },
+    {
+      "instance": {
+        "openmrs_entity_id": "",
+        "openmrs_entity": "concept"
+      },
+      "label": {
+        "English": "Did the mother breastfeed her child in the last 24 hours?"
+      },
+      "type": "select one",
+      "name": "mother_breastfed_last_24hrs",
+      "children": [
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "yes",
+          "label": {
+            "English": "Yes"
+          }
+        },
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "no",
+          "label": {
+            "English": "No"
+          }
+        }
+      ]
+    },
+    {
+      "instance": {
+        "openmrs_entity_id": "",
+        "openmrs_entity": "concept"
+      },
+      "label": {
+        "English": "Is the mother still breastfeeding?"
+      },
+      "type": "select one",
+      "name": "mother_breastfeeding",
+      "children": [
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "yes",
+          "label": {
+            "English": "Yes"
+          }
+        },
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "no",
+          "label": {
+            "English": "No"
+          }
+        }
+      ]
+    },
+    {
+      "instance": {
+        "openmrs_entity_id": "",
+        "openmrs_entity": "concept"
+      },
+      "label": {
+        "English": "Malaria rapid test"
+      },
+      "type": "select one",
+      "name": "mrdt_result",
+      "children": [
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "positive",
+          "label": {
+            "English": "Positive"
+          }
+        },
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "negative",
+          "label": {
+            "English": "Negative"
+          }
+        },
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "none",
+          "label": {
+            "English": "Test not done"
+          }
+        }
+      ]
+    },
+    {
+      "instance": {
+        "openmrs_entity_id": "",
+        "openmrs_entity": "concept"
+      },
+      "label": {
+        "English": "Who did the mRDT test?"
+      },
+      "type": "select one",
+      "name": "mrdt_source",
+      "children": [
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "chp",
+          "label": {
+            "English": "CHV"
+          }
+        },
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "other",
+          "label": {
+            "English": "Clinic/Dispensary/Chemist"
+          }
+        }
+      ]
+    },
+    {
+      "instance": {
+        "openmrs_entity_id": "",
+        "openmrs_entity": "concept"
+      },
+      "label": {
+        "English": "mRDT used from?"
+      },
+      "type": "select one",
+      "name": "mrdt_used_from",
+      "children": [
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "lg",
+          "label": {
+            "English": "LG"
+          }
+        },
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "government",
+          "label": {
+            "English": "Government"
+          }
+        },
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "other",
+          "label": {
+            "English": "Other"
+          }
+        }
+      ]
+    },
+    {
+      "instance": {
+        "openmrs_entity_id": "",
+        "openmrs_entity": "concept"
+      },
+      "label": {
+        "English": "What is the child's MUAC score? (in colours)"
+      },
+      "type": "select one",
+      "name": "muac_score",
+      "children": [
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "green",
+          "label": {
+            "English": "Green"
+          }
+        },
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "yellow",
+          "label": {
+            "English": "Yellow"
+          }
+        },
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "red",
+          "label": {
+            "English": "Red"
+          }
+        }
+      ]
+    },
+    {
+      "instance": {
+        "openmrs_entity_id": "",
+        "openmrs_entity": "concept"
+      },
+      "label": {
+        "English": "Does ${patient_name} have painful groin swelling?"
+      },
+      "type": "select one",
+      "name": "painful_swelling",
+      "children": [
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "yes",
+          "label": {
+            "English": "Yes"
+          }
+        },
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "no",
+          "label": {
+            "English": "No"
+          }
+        }
+      ]
+    },
+    {
+      "instance": {
+        "openmrs_entity_id": "",
+        "openmrs_entity": "concept"
+      },
+      "label": {
+        "English": "Does the patient have a cough?"
+      },
+      "type": "select one",
+      "name": "patient_coughs",
+      "children": [
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "yes",
+          "label": {
+            "English": "Yes"
+          }
+        },
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "no",
+          "label": {
+            "English": "No"
+          }
+        }
+      ]
+    },
+    {
+      "instance": {
+        "openmrs_entity_id": "",
+        "openmrs_entity": "concept"
+      },
+      "label": {
+        "English": "Does ${patient_name} have diarrhoea?"
+      },
+      "type": "select one",
+      "name": "patient_diarrhea",
+      "children": [
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "yes",
+          "label": {
+            "English": "Yes"
+          }
+        },
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "no",
+          "label": {
+            "English": "No"
+          }
+        }
+      ]
+    },
+    {
+      "instance": {
+        "openmrs_entity_id": "",
+        "openmrs_entity": "concept"
+      },
+      "label": {
+        "English": "Does the patient have fever?"
+      },
+      "type": "select one",
+      "name": "patient_fever",
+      "children": [
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "yes",
+          "label": {
+            "English": "Yes"
+          }
+        },
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "no",
+          "label": {
+            "English": "No"
+          }
+        }
+      ]
+    },
+    {
+      "instance": {
+        "openmrs_entity_id": "",
+        "openmrs_entity": "concept"
+      },
+      "label": {
+        "English": "Patient falling sick after immunization"
+      },
+      "type": "select one",
+      "name": "reaction_to_vaccine",
+      "children": [
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "yes",
+          "label": {
+            "English": "Yes"
+          }
+        },
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "no",
+          "label": {
+            "English": "No"
+          }
+        }
+      ]
+    },
+    {
+      "instance": {
+        "openmrs_entity_id": "",
+        "openmrs_entity": "concept"
+      },
+      "label": {
+        "English": "Does ${patient_name} have skin rash?"
+      },
+      "type": "select one",
+      "name": "skin_rash",
+      "children": [
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "yes",
+          "label": {
+            "English": "Yes"
+          }
+        },
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "no",
+          "label": {
+            "English": "No"
+          }
+        }
+      ]
+    },
+    {
+      "instance": {
+        "openmrs_entity_id": "",
+        "openmrs_entity": "concept"
+      },
+      "label": {
+        "English": "Sudden yellowness of eyes or skin"
+      },
+      "type": "select one",
+      "name": "skin_yellowness",
+      "children": [
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "yes",
+          "label": {
+            "English": "Yes"
+          }
+        },
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "no",
+          "label": {
+            "English": "No"
+          }
+        }
+      ]
+    },
+    {
+      "instance": {
+        "openmrs_entity_id": "",
+        "openmrs_entity": "concept"
+      },
+      "label": {
+        "English": "Has the patient been treated for malaria in the past two weeks?"
+      },
+      "type": "select one",
+      "name": "treated_past_two_weeks",
+      "children": [
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "yes",
+          "label": {
+            "English": "Yes"
+          }
+        },
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "no",
+          "label": {
+            "English": "No"
+          }
+        }
+      ]
+    },
+    {
+      "instance": {
+        "openmrs_entity_id": "",
+        "openmrs_entity": "concept"
+      },
+      "label": {
+        "English": "Sudden loss of movement of one or both arms or legs"
+      },
+      "type": "select one",
+      "name": "weakness",
+      "children": [
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "yes",
+          "label": {
+            "English": "Yes"
+          }
+        },
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "no",
+          "label": {
+            "English": "No"
+          }
+        }
+      ]
+    },
+    {
+      "instance": {
+        "openmrs_entity_id": "",
+        "openmrs_entity": "concept"
+      },
+      "label": {
+        "English": "A worm emerging from the skin?"
+      },
+      "type": "select one",
+      "name": "worm_emerging",
+      "children": [
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "yes",
+          "label": {
+            "English": "Yes"
+          }
+        },
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "no",
+          "label": {
+            "English": "No"
+          }
+        }
+      ]
+    },
+    {
+      "instance": {
+        "openmrs_entity_id": "",
+        "openmrs_entity": "concept"
+      },
+      "label": {
+        "English": "How long has the yellowness of eyes or skin lasted?"
+      },
+      "type": "select one",
+      "name": "yellowness_duration",
+      "children": [
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "1",
+          "label": {
+            "English": "Less than 2 weeks"
+          }
+        },
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "2",
+          "label": {
+            "English": "2 or more weeks"
+          }
+        }
+      ]
+    },
+    {
+      "instance": {
+        "openmrs_entity_id": "",
+        "openmrs_entity": "person_identifier"
+      },
+      "type": "text",
+      "name": "is_in_cbds_pilot",
+      "label": {
+        "English": "CBDS Pilot Flag"
+      }
+    },
+    {
+      "instance": {
+        "openmrs_entity_id": "",
+        "openmrs_entity": "person_identifier"
+      },
+      "type": "text",
+      "name": "date_of_birth",
+      "label": {
+        "English": "Date of Birth"
+      }
+    },
+    {
+      "instance": {
+        "openmrs_entity_id": "",
+        "openmrs_entity": "person_identifier"
+      },
+      "type": "text",
+      "name": "is_in_emnch_pilot",
+      "label": {
+        "English": "eMNCH Pilot Flag"
+      }
+    },
+    {
+      "instance": {
+        "openmrs_entity_id": "",
+        "openmrs_entity": "person_identifier"
+      },
+      "type": "text",
+      "name": "name",
+      "label": {
+        "English": "Name"
+      }
+    },
+    {
+      "instance": {
+        "openmrs_entity_id": "",
+        "openmrs_entity": "person_identifier"
+      },
+      "type": "text",
+      "name": "sex",
+      "label": {
+        "English": "Sex"
+      }
+    },
+    {
+      "instance": {
+        "openmrs_entity_id": "",
+        "openmrs_entity": "person_identifier"
+      },
+      "type": "text",
+      "name": "source",
+      "label": {
+        "English": "Source"
+      }
+    },
+    {
+      "instance": {
+        "openmrs_entity_id": "",
+        "openmrs_entity": "person_identifier"
+      },
+      "type": "text",
+      "name": "source_id",
+      "label": {
+        "English": "Source ID"
+      }
+    },
+    {
+      "instance": {
+        "openmrs_entity_id": "",
+        "openmrs_entity": "person_identifier"
+      },
+      "type": "text",
+      "name": "_id",
+      "label": {
+        "English": "What is the patient's name?"
+      }
+    },
+    {
+      "instance": {
+        "openmrs_entity_id": "",
+        "openmrs_entity": "concept"
+      },
+      "label": {
+        "English": "Which Deworming has ${patient_name} received? "
+      },
+      "type": "select multiple",
+      "name": "deworming_doses",
+      "children": [
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "none",
+          "label": {
+            "English": "None"
+          }
+        },
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "12months",
+          "label": {
+            "English": "12 months"
+          }
+        },
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "18months",
+          "label": {
+            "English": "18 months"
+          }
+        },
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "24months",
+          "label": {
+            "English": "24 months"
+          }
+        },
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "2.5yrs",
+          "label": {
+            "English": "2.5 years"
+          }
+        },
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "3yrs",
+          "label": {
+            "English": "3 years"
+          }
+        },
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "3.5yrs",
+          "label": {
+            "English": "3.5 years"
+          }
+        },
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "4yrs",
+          "label": {
+            "English": "4 years"
+          }
+        },
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "4.5yrs",
+          "label": {
+            "English": "4.5 years"
+          }
+        },
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "5yrs",
+          "label": {
+            "English": "5 years"
+          }
+        }
+      ]
+    },
+    {
+      "instance": {
+        "openmrs_entity_id": "",
+        "openmrs_entity": "concept"
+      },
+      "label": {
+        "English": "Check child health card and tick all that are complete. If health card not available, ask the caregiver to recall what immunisations are complete, if any"
+      },
+      "type": "select multiple",
+      "name": "immunizations_18mo",
+      "children": [
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "bcg",
+          "label": {
+            "English": "BCG"
+          }
+        },
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "poliio0",
+          "label": {
+            "English": "Polio 0"
+          }
+        },
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "polio1",
+          "label": {
+            "English": "Polio 1"
+          }
+        },
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "polio2",
+          "label": {
+            "English": "Polio 2"
+          }
+        },
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "polio3",
+          "label": {
+            "English": "Polio 3"
+          }
+        },
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "dpt1",
+          "label": {
+            "English": "DPT - HepB + Hib1"
+          }
+        },
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "pcv1",
+          "label": {
+            "English": "PCV1"
+          }
+        },
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "rota1",
+          "label": {
+            "English": "Rota 1"
+          }
+        },
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "dpt2",
+          "label": {
+            "English": "DPT- HepB + Hib2"
+          }
+        },
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "pcv2",
+          "label": {
+            "English": "PCV2"
+          }
+        },
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "rota2",
+          "label": {
+            "English": "Rota 2"
+          }
+        },
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "dpt3",
+          "label": {
+            "English": "DPT- HepB + Hib3"
+          }
+        },
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "pcv3",
+          "label": {
+            "English": "PCV3"
+          }
+        },
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "measles_rubella1",
+          "label": {
+            "English": "Measles and Rubella 1"
+          }
+        },
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "measles_rubella2",
+          "label": {
+            "English": "Measles and Rubella 2"
+          }
+        },
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "vitamina",
+          "label": {
+            "English": "Vitamin A"
+          }
+        },
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "deworming",
+          "label": {
+            "English": "Deworming"
+          }
+        },
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "ipv",
+          "label": {
+            "English": "IPV"
+          }
+        }
+      ]
+    },
+    {
+      "instance": {
+        "openmrs_entity_id": "",
+        "openmrs_entity": "concept"
+      },
+      "label": {
+        "English": "Check Mother and Child Health booklet and tick all that are complete. If health card not available, ask the caregiver to recall what immunisations are complete, if any"
+      },
+      "type": "select multiple",
+      "name": "immunizations_2mo",
+      "children": [
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "bcg",
+          "label": {
+            "English": "BCG"
+          }
+        },
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "polio0",
+          "label": {
+            "English": "Polio 0"
+          }
+        },
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "polio1",
+          "label": {
+            "English": "Polio 1"
+          }
+        },
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "dpt1",
+          "label": {
+            "English": "DPT - HepB + Hib1"
+          }
+        },
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "dpt2",
+          "label": {
+            "English": "PCV1"
+          }
+        },
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "rota1",
+          "label": {
+            "English": "Rota 1"
+          }
+        }
+      ]
+    },
+    {
+      "instance": {
+        "openmrs_entity_id": "",
+        "openmrs_entity": "concept"
+      },
+      "label": {
+        "English": "Check Mother and Child Health booklet and tick all that are complete. If health card not available, ask the caregiver to recall what immunisations are complete, if any"
+      },
+      "type": "select multiple",
+      "name": "immunizations_9mo",
+      "children": [
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "bcg",
+          "label": {
+            "English": "BCG"
+          }
+        },
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "polio0",
+          "label": {
+            "English": "Polio 0"
+          }
+        },
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "polio1",
+          "label": {
+            "English": "Polio 1"
+          }
+        },
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "dpt1",
+          "label": {
+            "English": "DPT-HepB-Hib1"
+          }
+        },
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "polio2",
+          "label": {
+            "English": "Polio 2"
+          }
+        },
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "dpt2",
+          "label": {
+            "English": "DPT-HepB-Hib2"
+          }
+        },
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "polio3",
+          "label": {
+            "English": "Polio 3"
+          }
+        },
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "dpt3",
+          "label": {
+            "English": "DPT-HepB-Hib3"
+          }
+        },
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "measles_rubella",
+          "label": {
+            "English": "Measles and Rubella"
+          }
+        },
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "rota1",
+          "label": {
+            "English": "Rota 1"
+          }
+        },
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "rota2",
+          "label": {
+            "English": "Rota 2"
+          }
+        },
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "ipv",
+          "label": {
+            "English": "IPV"
+          }
+        }
+      ]
+    },
+    {
+      "instance": {
+        "openmrs_entity_id": "",
+        "openmrs_entity": "concept"
+      },
+      "label": {
+        "English": "Does ${patient_name} have any danger signs?"
+      },
+      "type": "select multiple",
+      "name": "infant_danger_signs",
+      "children": [
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "infant_fever",
+          "label": {
+            "English": "Fever"
+          }
+        },
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "infant_fast_breathing",
+          "label": {
+            "English": "Fast breathing"
+          }
+        },
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "infant_indrawn_chest",
+          "label": {
+            "English": "Chest in-drawing"
+          }
+        },
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "infant_convulsions",
+          "label": {
+            "English": "Convulsions"
+          }
+        },
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "infant_infected_cord",
+          "label": {
+            "English": "Infected umbilical cord"
+          }
+        },
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "infant_diarrhea",
+          "label": {
+            "English": "Diarrhea"
+          }
+        },
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "infant_unable_to_feed",
+          "label": {
+            "English": "Unable to breastfeed"
+          }
+        },
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "infant_skin_pustules",
+          "label": {
+            "English": "Many skin pustules"
+          }
+        },
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "infant_vomits_everything",
+          "label": {
+            "English": "Vomits everything"
+          }
+        },
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "infant_very_sleepy",
+          "label": {
+            "English": "Very sleepy"
+          }
+        },
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "positive",
+          "label": {
+            "English": "Positive"
+          }
+        },
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "negative",
+          "label": {
+            "English": "Negative"
+          }
+        }
+      ]
+    },
+    {
+      "instance": {
+        "openmrs_entity_id": "",
+        "openmrs_entity": "concept"
+      },
+      "label": {
+        "English": "Click to see examples of positive and negative mRDT results."
+      },
+      "type": "select multiple",
+      "name": "mrdt_hint",
+      "children": [
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "show",
+          "label": {
+            "English": "Show mRDT Tip"
+          }
+        }
+      ]
+    },
+    {
+      "instance": {
+        "openmrs_entity_id": "",
+        "openmrs_entity": "concept"
+      },
+      "label": {
+        "English": "Did your child eat any of the following protective and energy giving foods in the last 24 hours?"
+      },
+      "type": "select multiple",
+      "name": "solid_foods_eaten",
+      "children": [
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "carbohydrates",
+          "label": {
+            "English": "Carbohydrates Ugali,rice,chapati,matoke,muhogo,nduma,sweet potatoes."
+          }
+        },
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "vegetables",
+          "label": {
+            "English": "Vegetables:Sukuma ,spinach,cabbage,kunde,managu,terere,pumpkin leaves"
+          }
+        },
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "fruits",
+          "label": {
+            "English": "Fruits:Water melons,oranges,avocados,babanas,mangoes,pawpaw"
+          }
+        },
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "water",
+          "label": {
+            "English": "Water"
+          }
+        },
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "proteins",
+          "label": {
+            "English": "Proteins- beef, goat, pork, lamb, chicken, duck, fish, beans, peas, green grams."
+          }
+        },
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "none",
+          "label": {
+            "English": "None of the above"
+          }
+        }
+      ]
+    },
+    {
+      "instance": {
+        "openmrs_entity_id": "",
+        "openmrs_entity": "concept"
+      },
+      "label": {
+        "English": "Which Vit A dose has ${patient_name} received? "
+      },
+      "type": "select multiple",
+      "name": "vit_a_doses",
+      "children": [
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "none",
+          "label": {
+            "English": "None"
+          }
+        },
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "6months",
+          "label": {
+            "English": "6 months"
+          }
+        },
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "12months",
+          "label": {
+            "English": "12 months"
+          }
+        },
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "18months",
+          "label": {
+            "English": "18 months"
+          }
+        },
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "24months",
+          "label": {
+            "English": "24 months"
+          }
+        },
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "2.5yrs",
+          "label": {
+            "English": "2.5 years"
+          }
+        },
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "3yrs",
+          "label": {
+            "English": "3 years"
+          }
+        },
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "3.5yrs",
+          "label": {
+            "English": "3.5 years"
+          }
+        },
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "4yrs",
+          "label": {
+            "English": "4 years"
+          }
+        },
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "4.5yrs",
+          "label": {
+            "English": "4.5 years"
+          }
+        },
+        {
+          "instance": {
+            "openmrs_code": ""
+          },
+          "name": "5yrs",
+          "label": {
+            "English": "5 years"
+          }
+        }
+      ]
+    },
+    {
+      "instance": {
+        "openmrs_entity_id": "",
+        "openmrs_entity": "concept"
+      },
+      "bind": {
+        "calculate": "if(${diagnosis_cough}='pneumonia1', if( ${patient_age_in_months} >= 1 and ${patient_age_in_years} < 5, '5ml (125mg)', '5ml (250mg)') ,'')"
+      },
+      "type": "calculate",
+      "name": "cough_amox_dosage",
+      "label": {
+        "English": ""
+      }
+    },
+    {
+      "instance": {
+        "openmrs_entity_id": "",
+        "openmrs_entity": "concept"
+      },
+      "bind": {
+        "calculate": "substr(${danger_signs_str_tmp},0, ${danger_signs_str_len})"
+      },
+      "type": "calculate",
+      "name": "danger_signs_str",
+      "label": {
+        "English": ""
+      }
+    },
+    {
+      "instance": {
+        "openmrs_entity_id": "",
+        "openmrs_entity": "concept"
+      },
+      "bind": {
+        "calculate": "string-length(${danger_signs_str_tmp}) -2"
+      },
+      "type": "calculate",
+      "name": "danger_signs_str_len",
+      "label": {
+        "English": ""
+      }
+    },
+    {
+      "instance": {
+        "openmrs_entity_id": "",
+        "openmrs_entity": "concept"
+      },
+      "bind": {
+        "calculate": "if(count-selected(${danger_signs}) > 0, concat( if(selected(${danger_signs},'convulsions'), 'Convulsions, ',''), if(selected(${danger_signs},'unable_to_feed'), 'Unable to feed, ',''), if(selected(${danger_signs},'vomits_everything'), 'Vomits everything, ',''), if(selected(${danger_signs},'very_sleepy'), 'Very sleepy, ','') ), '')"
+      },
+      "type": "calculate",
+      "name": "danger_signs_str_tmp",
+      "label": {
+        "English": ""
+      }
+    },
+    {
+      "instance": {
+        "openmrs_entity_id": "",
+        "openmrs_entity": "concept"
+      },
+      "bind": {
+        "calculate": "if (${patient_coughs}='yes', if ( int(${coughing_duration}) > 14, if ( ${chest_indrawing}='yes' or ${fast_breathing}='true', 'pneumonia2c', 'cough2' ), if ( ${chest_indrawing}='yes' and ${fast_breathing}='true', 'pneumonia2b', if ( ${chest_indrawing}='yes', 'cough3', if ( ${fast_breathing}='true', 'pneumonia1', 'cough1' ) ) ) ), '' )"
+      },
+      "type": "calculate",
+      "name": "diagnosis_cough",
+      "label": {
+        "English": ""
+      }
+    },
+    {
+      "instance": {
+        "openmrs_entity_id": "",
+        "openmrs_entity": "concept"
+      },
+      "bind": {
+        "calculate": "if (${patient_diarrhea}='yes', if ( int(${diarrhea_duration}) > 14 or ${diarrhea_blood} = 'yes', 'diarrhea2', 'diarrhea1' ), '' )"
+      },
+      "type": "calculate",
+      "name": "diagnosis_diarrhea",
+      "label": {
+        "English": ""
+      }
+    },
+    {
+      "instance": {
+        "openmrs_entity_id": "",
+        "openmrs_entity": "concept"
+      },
+      "bind": {
+        "calculate": "if(${patient_temperature} > 37.5, if(${fever_duration} <= 7, if(${mrdt_result} = 'positive', 'malaria2a', if(${treated_past_two_weeks} = 'yes', 'fever2b', 'fever2a' ) ), if(${mrdt_result} = 'positive', 'malaria2b', 'fever3' ) ), if(${mrdt_result} = 'positive', 'malaria1', if(${patient_fever} = 'yes', if(${treated_past_two_weeks} = 'yes', 'fever1a', if(${mrdt_result} = 'negative', if(${fever_duration} <= 7, 'fever1b1', 'fever1b2' ), 'fever1c' ) ), '' ) ) )"
+      },
+      "type": "calculate",
+      "name": "diagnosis_fever",
+      "label": {
+        "English": ""
+      }
+    },
+    {
+      "instance": {
+        "openmrs_entity_id": "",
+        "openmrs_entity": "concept"
+      },
+      "bind": {
+        "calculate": "if((${breath_count}>=60) and (${patient_age_in_days}<14), \"\"true\"\", if((${breath_count}>=50) and (${patient_age_in_days}>=14) and (${patient_age_in_days}<365), \"\"true\"\", if((${breath_count}>=40) and (${patient_age_in_days}>=365) and (${patient_age_in_days}<(5*365.25)), \"\"true\"\", if((${breath_count}>=30) and (${patient_age_in_days}>=(5*365.25)), \"\"true\"\", \"\"false\"\" )))) "
+      },
+      "type": "calculate",
+      "name": "fast_breathing",
+      "label": {
+        "English": ""
+      }
+    },
+    {
+      "instance": {
+        "openmrs_entity_id": "",
+        "openmrs_entity": "concept"
+      },
+      "bind": {
+        "calculate": "substr(${infant_danger_signs_str_tmp},0, ${infant_danger_signs_str_len})"
+      },
+      "type": "calculate",
+      "name": "infant_danger_signs_str",
+      "label": {
+        "English": ""
+      }
+    },
+    {
+      "instance": {
+        "openmrs_entity_id": "",
+        "openmrs_entity": "concept"
+      },
+      "bind": {
+        "calculate": "string-length(${infant_danger_signs_str_tmp}) -2"
+      },
+      "type": "calculate",
+      "name": "infant_danger_signs_str_len",
+      "label": {
+        "English": ""
+      }
+    },
+    {
+      "instance": {
+        "openmrs_entity_id": "",
+        "openmrs_entity": "concept"
+      },
+      "bind": {
+        "calculate": "if(count-selected(${infant_danger_signs}) > 0, concat( if(selected(${infant_danger_signs},'infant_fever'), 'Fever, ',''), if(selected(${infant_danger_signs},'infant_fast_breathing'), 'Fast breathing, ',''), if(selected(${infant_danger_signs},'infant_indrawn_chest'), 'Chest in-drawing, ',''), if(selected(${infant_danger_signs},'infant_convulsions'), 'Convulsions, ',''), if(selected(${infant_danger_signs},'infant_infected_cord'), 'Infected umbilical cord, ',''), if(selected(${infant_danger_signs},'infant_diarrhea'), 'Diarrhea, ',''), if(selected(${infant_danger_signs},'infant_unable_to_feed'), 'Unable to breastfeed, ',''), if(selected(${infant_danger_signs},'infant_skin_pustules'), 'Many skin pustules, ',''), if(selected(${infant_danger_signs},'infant_vomits_everything'), 'Vomits everything, ',''), if(selected(${infant_danger_signs},'infant_very_sleepy'), 'Very sleepy, ','') ), '')"
+      },
+      "type": "calculate",
+      "name": "infant_danger_signs_str_tmp",
+      "label": {
+        "English": ""
+      }
+    },
+    {
+      "instance": {
+        "openmrs_entity_id": "",
+        "openmrs_entity": "concept"
+      },
+      "bind": {
+        "calculate": "${syndrome_newborn_disease} != '' or ${syndrome_fever_rash} != '' or ${syndrome_fever} != '' or ${syndrome_yellowness_of_eyes_skin} != '' or ${syndrome_skin_worm} != '' or ${syndrome_animal_bite} != '' or ${syndrome_watery_diarrhoea} != '' or ${syndrome_chest_illness} != '' or ${syndrome_weakness} != ''"
+      },
+      "type": "calculate",
+      "name": "is_referral",
+      "label": {
+        "English": ""
+      }
+    },
+    {
+      "instance": {
+        "openmrs_entity_id": "",
+        "openmrs_entity": "concept"
+      },
+      "bind": {
+        "calculate": "${patient_temperature}"
+      },
+      "type": "calculate",
+      "name": "measured_temperature",
+      "label": {
+        "English": ""
+      }
+    },
+    {
+      "instance": {
+        "openmrs_entity_id": "",
+        "openmrs_entity": "concept"
+      },
+      "bind": {
+        "calculate": "if(${blood_refills_quickly} = 'no' and ${has_paleness} = 'yes', 'true','false')"
+      },
+      "type": "calculate",
+      "name": "needs_anaemia_follow_up",
+      "label": {
+        "English": ""
+      }
+    },
+    {
+      "instance": {
+        "openmrs_entity_id": "",
+        "openmrs_entity": "concept"
+      },
+      "bind": {
+        "calculate": "if(${child_immunization_up_to_date} = 'yes', 'false', 'true')"
+      },
+      "type": "calculate",
+      "name": "needs_immunization_follow_up",
+      "label": {
+        "English": ""
+      }
+    },
+    {
+      "instance": {
+        "openmrs_entity_id": "",
+        "openmrs_entity": "concept"
+      },
+      "bind": {
+        "calculate": "if(${muac_score} = 'yellow' or ${muac_score} = 'red', 'true','false')"
+      },
+      "type": "calculate",
+      "name": "needs_muac_follow_up",
+      "label": {
+        "English": ""
+      }
+    },
+    {
+      "instance": {
+        "openmrs_entity_id": "",
+        "openmrs_entity": "concept"
+      },
+      "bind": {
+        "calculate": "concat( concat(${patient_age_in_years}, if(${patient_age_in_years}=1,' year and ',' years and ')), concat(${patient_age_in_months} mod 12, if((${patient_age_in_months} mod 12)=1,' month old',' months old')) )"
+      },
+      "type": "calculate",
+      "name": "patient_age_display",
+      "label": {
+        "English": ""
+      }
+    },
+    {
+      "instance": {
+        "openmrs_entity_id": "",
+        "openmrs_entity": "concept"
+      },
+      "bind": {
+        "calculate": "${patient_age_in_years}*365"
+      },
+      "type": "calculate",
+      "name": "patient_age_in_days",
+      "label": {
+        "English": ""
+      }
+    },
+    {
+      "instance": {
+        "openmrs_entity_id": "",
+        "openmrs_entity": "concept"
+      },
+      "bind": {
+        "calculate": "${patient_age_in_years}*12"
+      },
+      "type": "calculate",
+      "name": "patient_age_in_months",
+      "label": {
+        "English": ""
+      }
+    },
+    {
+      "instance": {
+        "openmrs_entity_id": "",
+        "openmrs_entity": "concept"
+      },
+      "bind": {
+        "calculate": ""
+      },
+      "type": "calculate",
+      "name": "patient_id",
+      "label": {
+        "English": ""
+      }
+    },
+    {
+      "instance": {
+        "openmrs_entity_id": "",
+        "openmrs_entity": "concept"
+      },
+      "bind": {
+        "calculate": ""
+      },
+      "type": "calculate",
+      "name": "patient_name",
+      "label": {
+        "English": ""
+      }
+    },
+    {
+      "instance": {
+        "openmrs_entity_id": "",
+        "openmrs_entity": "concept"
+      },
+      "bind": {
+        "calculate": "if (${referral_follow_up} = 'true', 'Follow up in 1 day to ensure that patient goes to a health facility', if (${treatment_follow_up} = 'true', 'Follow up in 2 days to see if there is improvement with treatment', '' ) )"
+      },
+      "type": "calculate",
+      "name": "r_followup_instructions",
+      "label": {
+        "English": ""
+      }
+    },
+    {
+      "instance": {
+        "openmrs_entity_id": "",
+        "openmrs_entity": "concept"
+      },
+      "bind": {
+        "calculate": "if (${diagnosis_cough}='cough2' or (${diagnosis_cough}='cough3' and ${patient_age_in_years} < 5) or (${diagnosis_cough}='pneumonia2b' and ${patient_age_in_years} < 5) or ${diagnosis_cough}='pneumonia2c' or (${diagnosis_diarrhea}='diarrhea1' and ${patient_age_in_years} >= 5) or ${diagnosis_diarrhea}='diarrhea2' or (${diagnosis_fever}='malaria1' and ${patient_age_in_months} < 4) or (${diagnosis_fever}='fever2b' and ${patient_age_in_years} < 3) or (${diagnosis_fever}='malaria2a' and ${patient_age_in_months} < 4) or ${diagnosis_fever}='malaria2b' or ${diagnosis_fever}='fever3' or count-selected(${danger_signs}) > 0 or ${patient_age_in_months} < 2 or ${is_referral} = 'true', 'true', 'false' )"
+      },
+      "type": "calculate",
+      "name": "referral_follow_up",
+      "label": {
+        "English": ""
+      }
+    },
+    {
+      "instance": {
+        "openmrs_entity_id": "",
+        "openmrs_entity": "concept"
+      },
+      "bind": {
+        "calculate": "substr(${suspected_syndromes_tmp},0, ${suspected_syndromes_len})"
+      },
+      "type": "calculate",
+      "name": "suspected_syndromes",
+      "label": {
+        "English": ""
+      }
+    },
+    {
+      "instance": {
+        "openmrs_entity_id": "",
+        "openmrs_entity": "concept"
+      },
+      "bind": {
+        "calculate": "string-length(${suspected_syndromes_tmp}) -1"
+      },
+      "type": "calculate",
+      "name": "suspected_syndromes_len",
+      "label": {
+        "English": ""
+      }
+    },
+    {
+      "instance": {
+        "openmrs_entity_id": "",
+        "openmrs_entity": "concept"
+      },
+      "bind": {
+        "calculate": "concat( if(${syndrome_newborn_disease} != '', 'Newborn Disease,', ''), if(${syndrome_fever} != '', 'Body Hotness (Fever),', ''), if(${syndrome_fever_rash} != '', 'Body Hotness and Rash', ''), if(${syndrome_fever_bleeding} != '', 'Body Hotness and bleeding,', ''), if(${syndrome_fever_painful_swelling} != '', 'Body Hotness and Painful Swelling,', ''), if(${syndrome_yellowness_of_eyes_skin} != '', 'Sudden Yellowness of eyes or skin,', ''), if(${syndrome_skin_worm} != '', 'Skin Worm,', ''), if(${syndrome_animal_bite} != '', 'Animal bite,', ''), if(${syndrome_watery_diarrhoea} != '', 'Lots of watery diarrhoea,', ''), if(${syndrome_chest_illness} != '', 'Severe Chest Illness,', ''), if(${syndrome_weakness} != '', 'Sudden weakness or loss of movement of arms or legs,', ''),if(${syndrome_aefi} != '', 'AEFI,', '') ) "
+      },
+      "type": "calculate",
+      "name": "suspected_syndromes_tmp",
+      "label": {
+        "English": ""
+      }
+    },
+    {
+      "instance": {
+        "openmrs_entity_id": "",
+        "openmrs_entity": "concept"
+      },
+      "bind": {
+        "calculate": "if (${patient_coughs}='yes', concat ( 'Cough', if( string-length(${coughing_duration}) != 0, concat ( ' for ', jr:choice-name(${coughing_duration}, '${coughing_duration}') ), '' ) ), '' )"
+      },
+      "type": "calculate",
+      "name": "symptom_cough",
+      "label": {
+        "English": ""
+      }
+    },
+    {
+      "instance": {
+        "openmrs_entity_id": "",
+        "openmrs_entity": "concept"
+      },
+      "bind": {
+        "calculate": "if( count-selected(${danger_signs}) > 0 or count-selected(${infant_danger_signs}) > 0, 'Danger signs',  '')"
+      },
+      "type": "calculate",
+      "name": "symptom_danger_signs",
+      "label": {
+        "English": ""
+      }
+    },
+    {
+      "instance": {
+        "openmrs_entity_id": "",
+        "openmrs_entity": "concept"
+      },
+      "bind": {
+        "calculate": "${danger_signs}"
+      },
+      "type": "calculate",
+      "name": "symptom_danger_signs_codes",
+      "label": {
+        "English": ""
+      }
+    },
+    {
+      "instance": {
+        "openmrs_entity_id": "",
+        "openmrs_entity": "concept"
+      },
+      "bind": {
+        "calculate": "if (${patient_diarrhea}='yes', concat( 'Diarrhoea', if( string-length(${diarrhea_duration}) != 0, concat ( ' for ', jr:choice-name(${diarrhea_duration}, '${diarrhea_duration}') ), '' ), if (${diarrhea_blood}='yes', ' with blood', '') ), '' )"
+      },
+      "type": "calculate",
+      "name": "symptom_diarrhea",
+      "label": {
+        "English": ""
+      }
+    },
+    {
+      "instance": {
+        "openmrs_entity_id": "",
+        "openmrs_entity": "concept"
+      },
+      "bind": {
+        "calculate": "if (${fast_breathing} = 'true', 'Fast breathing', '')"
+      },
+      "type": "calculate",
+      "name": "symptom_fast_breathing",
+      "label": {
+        "English": ""
+      }
+    },
+    {
+      "instance": {
+        "openmrs_entity_id": "",
+        "openmrs_entity": "concept"
+      },
+      "bind": {
+        "calculate": "if ((${patient_temperature} > 37.5 or ${patient_fever} = 'yes'), concat ( 'Fever', if( string-length(${fever_duration}) != 0, concat ( ' for ', jr:choice-name(${fever_duration}, '${fever_duration}') ), '' ) ), '' )"
+      },
+      "type": "calculate",
+      "name": "symptom_fever",
+      "label": {
+        "English": ""
+      }
+    },
+    {
+      "instance": {
+        "openmrs_entity_id": "",
+        "openmrs_entity": "concept"
+      },
+      "bind": {
+        "calculate": "if (${chest_indrawing}='yes', 'In-drawn chest', '')"
+      },
+      "type": "calculate",
+      "name": "symptom_indrawn_chest",
+      "label": {
+        "English": ""
+      }
+    },
+    {
+      "instance": {
+        "openmrs_entity_id": "",
+        "openmrs_entity": "concept"
+      },
+      "bind": {
+        "calculate": "if( string-length(${mrdt_result}) != 0, concat ( 'Malaria: ', jr:choice-name(${mrdt_result}, '${mrdt_result}') ), '' ) "
+      },
+      "type": "calculate",
+      "name": "symptom_malaria_test",
+      "label": {
+        "English": ""
+      }
+    },
+    {
+      "instance": {
+        "openmrs_entity_id": "",
+        "openmrs_entity": "concept"
+      },
+      "bind": {
+        "calculate": "if(${reaction_to_vaccine} = 'yes', 'AEFI','')"
+      },
+      "type": "calculate",
+      "name": "syndrome_aefi",
+      "label": {
+        "English": ""
+      }
+    },
+    {
+      "instance": {
+        "openmrs_entity_id": "",
+        "openmrs_entity": "concept"
+      },
+      "bind": {
+        "calculate": "if(${animal_bite} = 'yes', 'Animal bite', '')"
+      },
+      "type": "calculate",
+      "name": "syndrome_animal_bite",
+      "label": {
+        "English": ""
+      }
+    },
+    {
+      "instance": {
+        "openmrs_entity_id": "",
+        "openmrs_entity": "concept"
+      },
+      "bind": {
+        "calculate": "if(${patient_coughs} = 'yes' and ${difficulty_in_breathing} = 'yes', 'Severe chest illness', '')"
+      },
+      "type": "calculate",
+      "name": "syndrome_chest_illness",
+      "label": {
+        "English": ""
+      }
+    },
+    {
+      "instance": {
+        "openmrs_entity_id": "",
+        "openmrs_entity": "concept"
+      },
+      "bind": {
+        "calculate": "if(${syndrome_fever_bleeding} != '' or ${syndrome_fever_painful_swelling} != '', 'Body hotness (Fever)','')"
+      },
+      "type": "calculate",
+      "name": "syndrome_fever",
+      "label": {
+        "English": ""
+      }
+    },
+    {
+      "instance": {
+        "openmrs_entity_id": "",
+        "openmrs_entity": "concept"
+      },
+      "bind": {
+        "calculate": "if(${patient_fever} = 'yes' and ${bleeding} = 'yes', 'Body hotness (Fever) with bleeding', '')"
+      },
+      "type": "calculate",
+      "name": "syndrome_fever_bleeding",
+      "label": {
+        "English": ""
+      }
+    },
+    {
+      "instance": {
+        "openmrs_entity_id": "",
+        "openmrs_entity": "concept"
+      },
+      "bind": {
+        "calculate": "if(${patient_fever} = 'yes' and ${painful_swelling} = 'yes', 'Body hotness (Fever) with painful groin swelling', '')"
+      },
+      "type": "calculate",
+      "name": "syndrome_fever_painful_swelling",
+      "label": {
+        "English": ""
+      }
+    },
+    {
+      "instance": {
+        "openmrs_entity_id": "",
+        "openmrs_entity": "concept"
+      },
+      "bind": {
+        "calculate": "if(${patient_fever} = 'yes' and ${skin_rash} = 'yes', 'Body hotness (Fever) with rash', '')"
+      },
+      "type": "calculate",
+      "name": "syndrome_fever_rash",
+      "label": {
+        "English": ""
+      }
+    },
+    {
+      "instance": {
+        "openmrs_entity_id": "",
+        "openmrs_entity": "concept"
+      },
+      "bind": {
+        "calculate": ""
+      },
+      "type": "calculate",
+      "name": "syndrome_newborn_disease",
+      "label": {
+        "English": ""
+      }
+    },
+    {
+      "instance": {
+        "openmrs_entity_id": "",
+        "openmrs_entity": "concept"
+      },
+      "bind": {
+        "calculate": "if(${worm_emerging} = 'yes', 'Skin worm', '')"
+      },
+      "type": "calculate",
+      "name": "syndrome_skin_worm",
+      "label": {
+        "English": ""
+      }
+    },
+    {
+      "instance": {
+        "openmrs_entity_id": "",
+        "openmrs_entity": "concept"
+      },
+      "bind": {
+        "calculate": "if(${patient_diarrhea} = 'yes' and (${diarrhea_episodes}  >= 3 or  ${diarrhea_blood} = 'yes'), 'Lots of watery diarrhoea', '')"
+      },
+      "type": "calculate",
+      "name": "syndrome_watery_diarrhoea",
+      "label": {
+        "English": ""
+      }
+    },
+    {
+      "instance": {
+        "openmrs_entity_id": "",
+        "openmrs_entity": "concept"
+      },
+      "bind": {
+        "calculate": "if(${weakness} = 'yes' and ${injury_related} = 'no', 'Sudden weakness or loss of movement of arms or legs','')"
+      },
+      "type": "calculate",
+      "name": "syndrome_weakness",
+      "label": {
+        "English": ""
+      }
+    },
+    {
+      "instance": {
+        "openmrs_entity_id": "",
+        "openmrs_entity": "concept"
+      },
+      "bind": {
+        "calculate": "if(${skin_yellowness} = 'yes' and ${yellowness_duration} <2, 'Sudden yellowness of eyes or skin', '')"
+      },
+      "type": "calculate",
+      "name": "syndrome_yellowness_of_eyes_skin",
+      "label": {
+        "English": ""
+      }
+    },
+    {
+      "instance": {
+        "openmrs_entity_id": "",
+        "openmrs_entity": "concept"
+      },
+      "bind": {
+        "calculate": "if(${diagnosis_fever} = 'malaria1' or ${diagnosis_fever} = 'malaria2a' or ${diagnosis_fever} = 'malaria2b', 'true','false')"
+      },
+      "type": "calculate",
+      "name": "treat_for_malaria",
+      "label": {
+        "English": ""
+      }
+    },
+    {
+      "instance": {
+        "openmrs_entity_id": "",
+        "openmrs_entity": "concept"
+      },
+      "bind": {
+        "calculate": "if ( ${diagnosis_cough}='cough1' or (${diagnosis_cough}='cough3' and ${patient_age_in_years} >= 5) or ${diagnosis_cough}='pneumonia1' or (${diagnosis_cough} = 'pneumonia2b' and ${patient_age_in_years} >= 5) or ${diagnosis_diarrhea}='diarrhea1' or (${diagnosis_fever}='malaria1' and ${patient_age_in_months} >= 4) or ${diagnosis_fever}='fever2a' or ${diagnosis_fever}='fever2b' or (${diagnosis_fever}='malaria2a' and ${patient_age_in_months} >= 4), 'true', 'false' )"
+      },
+      "type": "calculate",
+      "name": "treatment_follow_up",
+      "label": {
+        "English": ""
+      }
+    },
+    {
+      "instance": {
+        "openmrs_entity_id": "",
+        "openmrs_entity": "concept"
+      },
+      "bind": {
+        "required": "yes"
+      },
+      "type": "decimal",
+      "name": "patient_temperature",
+      "label": {
+        "English": "What is the patient's temperature?"
+      }
+    },
+    {
+      "bind": {
+        "required": "yes"
+      },
+      "type": "integer",
+      "name": "breath_count",
+      "label": {
+        "English": "How many breaths per minute?"
+      }
+    },
+    {
+      "bind": {
+        "required": "yes"
+      },
+      "type": "integer",
+      "name": "patient_age_in_years",
+      "label": {
+        "English": "Years"
+      }
+    }
+  ]
+}

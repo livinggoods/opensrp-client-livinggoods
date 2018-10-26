@@ -83,10 +83,12 @@ public class Constants {
         public static final String CONTACT_SCREENING = "contact_screening";
         public static final String REMOVE_PATIENT = "remove_patient";
         public static final String TREATMENT_OUTCOME = "treatment_outcome";
+        public static final String SAMPLE_FORM = "sample_form";
+        public static final String EMNCH_FORM = "emnch_form";
     }
 
     public enum ScreenStage {
-        NOT_SCREENED, PRESUMPTIVE, SCREENED, POSITIVE, IN_TREATMENT;
+        NOT_SCREENED, PRESUMPTIVE, SCREENED, POSITIVE, IN_TREATMENT, SAMPLE_FORM;
     }
 
     public static final class TEST_RESULT {

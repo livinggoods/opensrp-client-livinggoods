@@ -9,7 +9,10 @@ import android.widget.TextView;
 import org.greenrobot.eventbus.EventBus;
 import org.greenrobot.eventbus.Subscribe;
 import org.greenrobot.eventbus.ThreadMode;
+import org.json.JSONObject;
+import org.smartregister.configurableviews.model.MainConfig;
 import org.smartregister.domain.FetchStatus;
+import org.smartregister.enketo.listener.DisplayFormListener;
 import org.smartregister.tbr.R;
 import org.smartregister.tbr.application.TbrApplication;
 import org.smartregister.tbr.event.BaseEvent;
@@ -32,7 +35,7 @@ import static org.smartregister.tbr.util.Constants.INTENT_KEY.LAST_SYNC_TIME_STR
  * Created by ndegwamartin on 09/10/2017.
  */
 
-public class HomeActivity extends BaseActivity {
+public class HomeActivity extends BaseActivity implements DisplayFormListener {
     private static final String TAG = HomeActivity.class.getCanonicalName();
     private View refreshButton;
 
@@ -50,6 +53,21 @@ public class HomeActivity extends BaseActivity {
             processView();
 
         }
+    }
+
+    @Override
+    public void saveFormSubmission(String var1, String var2, String var3, JSONObject var4){
+
+    }
+
+    @Override
+    public void savePartialFormData(String var1, String var2, String var3, JSONObject var4){
+
+    }
+
+    @Override
+    public void onFormClosed(String var1, String var2){
+
     }
 
     @Override

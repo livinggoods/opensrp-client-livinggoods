@@ -90,6 +90,7 @@ public abstract class BasePatientDetailActivity extends BaseActivity implements 
             int formIndex = getIndexForFormName(formName, formNames) + 1; // add the offset
             if (entityId != null || metaData != null) {
                 String data = EnketoFormUtils.getInstance(this).generateXMLInputForFormWithEntityId(entityId, formName, metaData);
+                System.out.println("Display Form:" + formIndex);
                 DisplayFormFragment displayFormFragment = getDisplayFormFragmentAtIndex(formIndex);
                 if (displayFormFragment != null) {
                     displayFormFragment.setFormData(data);
@@ -152,6 +153,8 @@ public abstract class BasePatientDetailActivity extends BaseActivity implements 
         formNames.add(Constants.FORM.REMOVE_PATIENT);
         formNames.add(Constants.FORM.TREATMENT_OUTCOME);
         formNames.add(TbrConstants.ENKETO_FORMS.ADD_POSITIVE_PATIENT);
+        formNames.add(TbrConstants.ENKETO_FORMS.SAMPLE_FORM);
+        formNames.add(TbrConstants.ENKETO_FORMS.EMNCH_FORM);
         return formNames.toArray(new String[formNames.size()]);
     }
 
@@ -229,6 +232,10 @@ public abstract class BasePatientDetailActivity extends BaseActivity implements 
             case POSITIVE:
                 intent = new Intent(this, PositivePatientDetailActivity.class);
                 registerToken = Register.POSITIVE_PATIENTS;
+                break;
+            case SAMPLE_FORM:
+                intent = new Intent(this, PositivePatientDetailActivity.class);
+                registerToken = Register.SAMPLE_FORM;
                 break;
             case IN_TREATMENT:
                 intent = new Intent(this, InTreatmentPatientDetailActivity.class);
