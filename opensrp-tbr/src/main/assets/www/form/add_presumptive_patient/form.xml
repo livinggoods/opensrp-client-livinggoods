@@ -133,7 +133,7 @@
                 is required
             </span>
         </fieldset>
-        <label class="question or-branch pre-init non-select ">
+        <label class="question or-branch pre-init non-select or-appearance-countdown-timer">
             <span class="question-label " data-itext-id="/ScreeningForm_11.01.18/screening_symptom/cough_duration:label"
                 lang="Roman Urdu">Agar
                 haan, kab se?

@@ -1,6 +1,7 @@
 configure(allprojects) { project ->
     buildscript {
         repositories {
+            google()
             jcenter()
             mavenCentral()
             maven { url 'https://oss.sonatype.org/content/repositories/snapshots/' }
@@ -49,6 +50,16 @@ subprojects {
 
 apply plugin : 'java'
 apply plugin : 'build-dashboard'
+
+repositories {
+    google()
+}
+
+buildscript {
+    repositories {
+        google()
+    }
+}
 
 buildDashboard {
     reports.html.setDestination(file("build/"))
