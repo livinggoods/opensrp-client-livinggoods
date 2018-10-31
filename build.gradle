@@ -1,6 +1,7 @@
 configure(allprojects) { project ->
     buildscript {
         repositories {
+            google()
             jcenter()
             mavenCentral()
             maven { url 'https://oss.sonatype.org/content/repositories/snapshots/' }
@@ -11,11 +12,13 @@ configure(allprojects) { project ->
 project.ext.preDexLibs = !project.hasProperty('disablePreDex')
 subprojects {
     group = 'org.smartregister'
+
     ext.androidToolsBuildGradle     = '3.1.2'
     ext.androidBuildToolsVersion    = '27.0.3'
     ext.androidMinSdkVersion        = 16
     ext.androidCompileSdkVersion    = 27
     ext.androidTargetSdkVersion     = 27
+
     ext.androidAnnotationsVersion = '3.0.1';
     ext.androidAnnotationsAPIVersion = '3.0.1';
     repositories {
@@ -23,18 +26,11 @@ subprojects {
         jcenter()
         mavenCentral()
         maven { url 'https://jitpack.io' }
-        maven { url "${projectDir}/libs/" }
         maven { url "http://nexus.motechproject.org/content/repositories/drishti" }
         maven { url "http://nexus.motechproject.org/content/repositories/snapshots" }
         maven { url "http://acra.googlecode.com/svn/repository/releases" }
         maven { url "http://repo.maven.apache.org/maven2" }
         maven { url "http://cloudant.github.io/cloudant-sync-eap/repository" }
-        maven {
-            url "${projectDir}/opensrp-tbr/../libs/"
-        }
-        maven {
-            url "${projectDir}/opensrp-tbr-it/../libs/"
-        }
         mavenLocal()
     }
     // Improve build server performance by allowing disabling of pre-dexing
@@ -49,8 +45,19 @@ subprojects {
 }
 apply plugin : 'java'
 apply plugin : 'build-dashboard'
+
+repositories {
+    google()
+}
+
+buildscript {
+    repositories {
+        google()
+    }
+}
+
 buildDashboard {
-    reports.html.destination = "build/"
+    reports.html.setDestination(file("build/"))
 }
 test.reports.html.enabled = false
 test.reports.junitXml.enabled = false

@@ -29,6 +29,10 @@ import com.google.gson.internal.LinkedTreeMap;
 import org.apache.commons.lang3.ArrayUtils;
 import org.json.JSONObject;
 import org.smartregister.commonregistry.CommonPersonObjectClient;
+import org.smartregister.configurableviews.ConfigurableViewsLibrary;
+import org.smartregister.configurableviews.helper.ConfigurableViewsHelper;
+import org.smartregister.configurableviews.model.RegisterConfiguration;
+import org.smartregister.configurableviews.model.ViewConfiguration;
 import org.smartregister.cursoradapter.CursorCommonObjectFilterOption;
 import org.smartregister.cursoradapter.CursorCommonObjectSort;
 import org.smartregister.cursoradapter.CursorSortOption;
@@ -196,7 +200,7 @@ public abstract class BaseRegisterFragment extends SecuredNativeSmartRegisterCur
         RegisterConfiguration config = (RegisterConfiguration) viewConfiguration.getMetadata();
         if (config.getSearchBarText() != null && getView() != null)
             ((EditText) getView().findViewById(R.id.edt_search)).setHint(config.getSearchBarText());
-        visibleColumns = TbrApplication.getInstance().getConfigurableViewsHelper().getRegisterActiveColumns(getViewConfigurationIdentifier());
+        visibleColumns = ConfigurableViewsLibrary.getInstance().getConfigurableViewsHelper().getRegisterActiveColumns(getViewConfigurationIdentifier());
 
     }
 

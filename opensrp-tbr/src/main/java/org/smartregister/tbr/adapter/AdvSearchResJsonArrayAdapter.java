@@ -22,6 +22,7 @@ import org.smartregister.tbr.provider.PatientRegisterProvider;
 import org.smartregister.tbr.sync.ECSyncHelper;
 import org.smartregister.tbr.sync.TbrClientProcessor;
 import org.smartregister.tbr.util.Utils;
+import org.smartregister.util.DateUtil;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;

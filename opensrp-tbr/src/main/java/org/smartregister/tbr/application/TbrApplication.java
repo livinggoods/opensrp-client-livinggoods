@@ -1,6 +1,9 @@
 package org.smartregister.tbr.application;
 
+import android.content.BroadcastReceiver;
 import android.content.Intent;
+import android.content.IntentFilter;
+import android.support.v4.content.LocalBroadcastManager;
 import android.util.Log;
 
 import org.greenrobot.eventbus.EventBus;
@@ -10,12 +13,20 @@ import org.smartregister.Context;
 import org.smartregister.CoreLibrary;
 import org.smartregister.commonregistry.CommonFtsObject;
 import org.smartregister.configurableviews.ConfigurableViewsLibrary;
+import org.smartregister.configurableviews.helper.ConfigurableViewsHelper;
+import org.smartregister.configurableviews.helper.JsonSpecHelper;
+import org.smartregister.configurableviews.model.MainConfig;
+import org.smartregister.configurableviews.repository.ConfigurableViewsRepository;
+import org.smartregister.configurableviews.service.PullConfigurableViewsIntentService;
+import org.smartregister.configurableviews.util.Constants;
+import org.smartregister.configurableviews.ConfigurableViewsLibrary;
 import org.smartregister.repository.EventClientRepository;
 import org.smartregister.repository.Repository;
 import org.smartregister.sync.DrishtiSyncScheduler;
 import org.smartregister.tbr.activity.LoginActivity;
 import org.smartregister.tbr.event.LanguageConfigurationEvent;
 import org.smartregister.tbr.event.TriggerSyncEvent;
+import org.smartregister.tbr.event.ViewConfigurationSyncCompleteEvent;
 //import org.smartregister.tbr.jsonspec.ConfigurableViewsHelper;
 import org.smartregister.configurableviews.helper.ConfigurableViewsHelper;
 //import org.smartregister.tbr.jsonspec.JsonSpecHelper;
@@ -221,8 +232,12 @@ public class TbrApplication extends DrishtiApplication {
     }
 
     private void setUpEventHandling() {
+
         try {
+
             EventBus.builder().addIndex(new org.smartregister.tbr.TBREventBusIndex()).installDefaultEventBus();
+            LocalBroadcastManager.getInstance(this).registerReceiver(syncCompleteMessageReceiver, new IntentFilter(PullConfigurableViewsIntentService.EVENT_SYNC_COMPLETE));
+
         } catch
                 (Exception e) {
             Log.e(TAG, e.getMessage());
@@ -249,4 +264,26 @@ public class TbrApplication extends DrishtiApplication {
             Utils.saveLanguage(config.getLanguage());
         }
     }
+
+    // This Broadcast Receiver is the handler called whenever an Intent with an action named PullConfigurableViewsIntentService.EVENT_SYNC_COMPLETE is broadcast.
+    private BroadcastReceiver syncCompleteMessageReceiver = new BroadcastReceiver() {
+        @Override
+        public void onReceive(android.content.Context context, Intent intent) {
+            // Retrieve the extra data included in the Intent
+
+            int recordsRetrievedCount = intent.getIntExtra(Constants.INTENT_KEY.SYNC_TOTAL_RECORDS, 0);
+            if (recordsRetrievedCount > 0) {
+                LanguageConfigurationEvent event = new LanguageConfigurationEvent(true);//To Do add check for language configs
+                Utils.postEvent(event);
+            }
+
+            Utils.postEvent(new ViewConfigurationSyncCompleteEvent());
+
+            String lastSyncTime = intent.getStringExtra(org.smartregister.configurableviews.util.Constants.INTENT_KEY.LAST_SYNC_TIME_STRING);
+
+            Utils.writePrefString(context, org.smartregister.configurableviews.util.Constants.INTENT_KEY.LAST_SYNC_TIME_STRING, lastSyncTime);
+
+        }
+    };
+
 }

@@ -37,6 +37,10 @@ public class EmnchFormFragment extends BaseRegisterFragment {
         View headerLayout = getLayoutInflater(null).inflate(R.layout.register_list_header, null);
         populateClientListHeaderView(view, headerLayout, EMNCH_FORM);
     }
+    @Override
+    public String getAggregateCondition(boolean b) {
+        return "";
+    }
 
     @Override
     protected String getMainCondition() {

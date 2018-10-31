@@ -80,7 +80,7 @@ public class PullConfigurableViewsIntentServiceTest extends BaseUnitTest {
                 .thenReturn(new Response(ResponseStatus.success, "[]"));
         helper.processIntent();
         verify(configurableViewsRepository, never()).saveConfigurableViews(any(JSONArray.class));
-        verify(syncHelper,never()).updateLoginConfigurableViewPreference(anyString());
+        verify(syncHelper, never()).updateLoginConfigurableViewPreference(anyString());
     }
 
     @Test
@@ -100,7 +100,7 @@ public class PullConfigurableViewsIntentServiceTest extends BaseUnitTest {
         helper.processIntent();
         verify(configurableViewsRepository, never()).saveConfigurableViews(any(JSONArray.class));
         verify(syncHelper, never()).updateLastViewsSyncTimeStamp(anyLong());
-        verify(syncHelper).updateLoginConfigurableViewPreference( new JSONArray(loginJson).get(0).toString());
+        verify(syncHelper).updateLoginConfigurableViewPreference(new JSONArray(loginJson).get(0).toString());
     }
 
     @Test
@@ -111,7 +111,7 @@ public class PullConfigurableViewsIntentServiceTest extends BaseUnitTest {
         helper.processIntent();
         verify(configurableViewsRepository).saveConfigurableViews(any(JSONArray.class));
         verify(syncHelper).updateLastViewsSyncTimeStamp(anyLong());
-        verify(syncHelper).updateLoginConfigurableViewPreference( new JSONArray(loginJson).get(0).toString());
+        verify(syncHelper).updateLoginConfigurableViewPreference(new JSONArray(loginJson).get(0).toString());
     }
 
     @Test
@@ -122,7 +122,7 @@ public class PullConfigurableViewsIntentServiceTest extends BaseUnitTest {
         helper.processIntent();
         verify(configurableViewsRepository).saveConfigurableViews(any(JSONArray.class));
         verify(syncHelper).updateLastViewsSyncTimeStamp(anyLong());
-        verify(syncHelper,never()).updateLoginConfigurableViewPreference(anyString());
+        verify(syncHelper, never()).updateLoginConfigurableViewPreference(anyString());
     }
 
 

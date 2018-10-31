@@ -8,6 +8,9 @@ import android.view.HapticFeedbackConstants;
 import android.view.View;
 import android.widget.ListView;
 
+import org.smartregister.configurableviews.model.Residence;
+import org.smartregister.configurableviews.model.ViewConfiguration;
+import org.smartregister.configurableviews.repository.ConfigurableViewsRepository;
 import org.smartregister.tbr.R;
 import org.smartregister.tbr.activity.EmnchFormActivity;
 import org.smartregister.tbr.activity.InTreatmentPatientRegisterActivity;

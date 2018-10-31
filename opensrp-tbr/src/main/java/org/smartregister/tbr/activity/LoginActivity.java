@@ -4,7 +4,6 @@ import android.app.AlertDialog;
 import android.app.ProgressDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.content.res.Configuration;
@@ -47,11 +46,11 @@ import org.json.JSONException;
 import org.json.JSONObject;
 import org.smartregister.Context;
 import org.smartregister.configurableviews.ConfigurableViewsLibrary;
-import org.smartregister.configurableviews.repository.ConfigurableViewsRepository;
+import org.smartregister.configurableviews.model.LoginConfiguration;
+import org.smartregister.configurableviews.model.ViewConfiguration;
 import org.smartregister.domain.LoginResponse;
-import org.smartregister.domain.Response;
-import org.smartregister.domain.ResponseStatus;
 import org.smartregister.domain.TimeStatus;
+import org.smartregister.domain.jsonmapping.LoginResponseData;
 import org.smartregister.event.Listener;
 import org.smartregister.repository.AllSharedPreferences;
 import org.smartregister.sync.DrishtiSyncScheduler;
@@ -64,18 +63,14 @@ import org.smartregister.configurableviews.model.LoginConfiguration.Background;
 import org.smartregister.configurableviews.model.ViewConfiguration;
 import org.smartregister.tbr.util.Constants;
 import org.smartregister.util.Utils;
-import org.smartregister.view.BackgroundAction;
-import org.smartregister.view.LockingBackgroundTask;
-import org.smartregister.view.ProgressIndicator;
 
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.Iterator;
 import java.util.Locale;
 import java.util.TimeZone;
-import java.util.zip.ZipEntry;
-import java.util.zip.ZipFile;
 
 import util.ImageLoaderRequest;
 import util.TbrConstants;
@@ -351,42 +346,6 @@ public class LoginActivity extends AppCompatActivity {
         }
     }
 
-    private void getLocation() {
-        tryGetLocation(new Listener<Response<String>>() {
-            @Override
-            public void onEvent(Response<String> data) {
-                if (data.status() == ResponseStatus.success) {
-                    getOpenSRPContext().userService().saveAnmLocation(data.payload());
-                }
-            }
-        });
-    }
-
-    private void tryGetLocation(final Listener<Response<String>> afterGet) {
-        LockingBackgroundTask task = new LockingBackgroundTask(new ProgressIndicator() {
-            @Override
-            public void setVisible() {
-            }
-
-            @Override
-            public void setInvisible() {
-                logInfo("Successfully get location");
-            }
-        });
-
-        task.doActionInBackground(new BackgroundAction<Response<String>>() {
-            @Override
-            public Response<String> actionToDoInBackgroundThread() {
-                return getOpenSRPContext().userService().getLocationInformation();
-            }
-
-            @Override
-            public void postExecuteInUIThread(Response<String> result) {
-                afterGet.onEvent(result);
-            }
-        });
-    }
-
     private void tryRemoteLogin(final String userName, final String password, final Listener<LoginResponse> afterLoginCheck) {
         if (remoteLoginTask != null && !remoteLoginTask.isCancelled()) {
             remoteLoginTask.cancel(true);
@@ -418,7 +377,7 @@ public class LoginActivity extends AppCompatActivity {
         }).start();
     }
 
-    private void remoteLoginWith(String userName, String password, String userInfo) {
+    private void remoteLoginWith(String userName, String password, LoginResponseData userInfo) {
         getOpenSRPContext().userService().remoteLogin(userName, password, userInfo);
         goToHome(true);
         DrishtiSyncScheduler.startOnlyIfConnectedToNetwork(getApplicationContext());
@@ -538,9 +497,9 @@ public class LoginActivity extends AppCompatActivity {
         try {
             String jsonString = Utils.getPreference(this, VIEW_CONFIGURATION_PREFIX + LOGIN, null);
             if (jsonString == null) return;
-            ViewConfiguration loginView = TbrApplication.getJsonSpecHelper().getConfigurableView(jsonString);
+            ViewConfiguration loginView = ConfigurableViewsLibrary.getJsonSpecHelper().getConfigurableView(jsonString);
             LoginConfiguration metadata = (LoginConfiguration) loginView.getMetadata();
-            Background background = metadata.getBackground();
+            LoginConfiguration.Background background = metadata.getBackground();
             if (!metadata.getShowPasswordCheckbox()) {
                 showPasswordCheckBox.setVisibility(View.GONE);
             } else {

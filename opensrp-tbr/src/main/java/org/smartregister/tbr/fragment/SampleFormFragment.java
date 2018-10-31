@@ -47,6 +47,11 @@ public class SampleFormFragment extends BaseRegisterFragment {
         return rootView;
     }
     @Override
+    public String getAggregateCondition(boolean b) {
+        return "";
+    }
+
+    @Override
     protected void populateClientListHeaderView(View view) {
         View headerLayout = getLayoutInflater(null).inflate(R.layout.register_list_header, null);
         populateClientListHeaderView(view, headerLayout, SAMPLE_FORM);
